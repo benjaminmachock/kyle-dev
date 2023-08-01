@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <>
-      <Container style={{ backgroundColor: "black", color: "white" }}>
+      <Container style={{ backgroundColor: "black", color: "white" }} fluid>
         <Row>
           <Col xs={12}>
             <h2>I AM FOOTER!!!</h2>
