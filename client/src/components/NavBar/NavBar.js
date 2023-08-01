@@ -15,6 +15,7 @@ const NavBar = () => {
           <Navbar.Brand href="#home">Kyle Jennings</Navbar.Brand>
           <Nav className="justify-content-end">
             <Nav.Link href="#home">Book</Nav.Link>
+            <Nav.Link href="#home">Schedule</Nav.Link>
             <Nav.Link href="#features">Music</Nav.Link>
             <Nav.Link href="#pricing">Contact</Nav.Link>
           </Nav>
