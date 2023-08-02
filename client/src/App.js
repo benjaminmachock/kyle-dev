@@ -1,14 +1,15 @@
-import NavBar from "./components/NavBar/NavBar";
+import Header from "./components/Header/Header";
 import BackgroundVideo from "./images/waves.mp4";
 import Footer from "./components/Footer/Footer";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import ImageSection from "./components/ImageSection";
 
 function App() {
   return (
     <>
-      <NavBar />
+      <Header />
       <Container fluid style={{ padding: 0 }}>
         <Row>
           <Col xs={12}>
@@ -18,6 +19,7 @@ function App() {
           </Col>
         </Row>
       </Container>
+      <ImageSection />
       <Footer />
     </>
   );
