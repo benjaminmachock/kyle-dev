@@ -44,7 +44,11 @@ const Header = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" aria-disabled="true">
+                  <a
+                    className="nav-link"
+                    aria-disabled="true"
+                    href="https://www.foxnews.com"
+                  >
                     Contact
                   </a>
                 </li>
