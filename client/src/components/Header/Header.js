@@ -13,7 +13,9 @@ const Header = () => {
       <header data-bs-theme="dark">
         <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <div className="container-fluid">
-            <h2 className="navbar-brand">KJ</h2>
+            <a className="navbar-brand" href="https://www.foxnews.com">
+              KJ
+            </a>
             <button
               className="navbar-toggler"
               type="button"
