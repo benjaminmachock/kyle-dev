@@ -13,7 +13,7 @@ const Header = () => {
       <header data-bs-theme="dark">
         <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="https://www.foxnews.com">
               KJ
             </a>
             <button
@@ -30,12 +30,16 @@ const Header = () => {
             <div className="collapse navbar-collapse" id="navbarCollapse">
               <ul className="navbar-nav me-auto mb-2 mb-md-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <a
+                    className="nav-link active"
+                    aria-current="page"
+                    href="https://www.foxnews.com"
+                  >
                     Book
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="https://www.foxnews.com">
                     Merch
                   </a>
                 </li>
