@@ -1,9 +1,9 @@
 //Imports
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 import { FaInstagram, FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
-import Image from "../../images/kj_symbol.png";
+// import Image from "../../images/kj_symbol.png";
 
 const Footer = () => {
   //Hooks
