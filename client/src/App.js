@@ -1,5 +1,5 @@
 import Header from "./components/Header/Header";
-import BackgroundVideo from "./images/waves.mp4";
+import BackgroundVideo from "./images/guitar_-_21328 (Original).mp4";
 import Footer from "./components/Footer/Footer";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";

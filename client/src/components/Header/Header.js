@@ -59,11 +59,6 @@ const Header = () => {
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="https://www.foxnews.com">
-                      KJ
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="https://www.foxnews.com">
                       Book
                     </a>
                   </li>
