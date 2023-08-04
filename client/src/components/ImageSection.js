@@ -3,10 +3,9 @@
 // import Row from "react-bootstrap/Row";
 // import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import Button from "react-bootstrap/Button";
+
 import Kyle1 from "../images/kyle1alt.jpg";
 import Kyle3 from "../images/kyle3.jpg";
-import Kyle2 from "../images/kyle2.jpg";
 
 const ImageSection = () => {
   //Hooks
