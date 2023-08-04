@@ -19,6 +19,7 @@ const Header = () => {
             <a
               className="navbar-brand d-md-none"
               href="https://www.foxnews.com"
+              target="no_blank"
             >
               <svg className="bi" width="24" height="24"></svg>
               KJ
@@ -53,37 +54,65 @@ const Header = () => {
               <div className="offcanvas-body">
                 <ul className="navbar-nav flex-grow-1 justify-content-between">
                   <li className="nav-item">
-                    <a className="nav-link" href="https://www.foxnews.com">
+                    <a
+                      className="nav-link"
+                      href="https://www.foxnews.com"
+                      target="no_blank"
+                    >
                       <svg className="bi" width="24" height="24"></svg>
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="https://www.foxnews.com">
+                    <a
+                      className="nav-link"
+                      href="https://www.foxnews.com"
+                      target="no_blank"
+                    >
                       Book
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="https://www.foxnews.com">
+                    <a
+                      className="nav-link"
+                      href="https://www.foxnews.com"
+                      target="no_blank"
+                    >
                       Schedule
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="https://www.foxnews.com">
+                    <a
+                      className="nav-link"
+                      href="https://www.foxnews.com"
+                      target="no_blank"
+                    >
                       KJ
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="https://www.foxnews.com">
+                    <a
+                      className="nav-link"
+                      href="https://www.foxnews.com"
+                      target="no_blank"
+                    >
                       Merch
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="https://www.foxnews.com">
+                    <a
+                      className="nav-link"
+                      href="https://www.foxnews.com"
+                      target="no_blank"
+                    >
                       Contact
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="https://www.foxnews.com">
+                    <a
+                      className="nav-link"
+                      href="https://www.foxnews.com"
+                      target="no_blank"
+                    >
                       <svg className="bi" width="24" height="24"></svg>
                     </a>
                   </li>
