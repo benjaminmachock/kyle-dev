@@ -20,26 +20,22 @@ const Footer = () => {
           <a href="/home">Back to top</a>
         </p>
         <p>
-          &copy; 2023 Kyle Jennings &middot;{" "}
+          &copy; 2023 Kyle Jennings
           <a href="https://instagram.com/kylejennings13" target="no_blank">
             <FaInstagram />
-          </a>{" "}
-          &middot;{" "}
+          </a>
           <a href="https://twitter.com/kylejennings13" target="no_blank">
             <FaTwitter />
           </a>
-          &middot;
           <a href="https://facebook.com/kylejenningsmusic" target="no_blank">
             <FaFacebook />
           </a>
-          &middot;
           <a
             href="https://youtube.com/kylejenningsmusiconline"
             target="no_blank"
           >
             <FaYoutube />
           </a>
-          &middot;
         </p>
       </footer>
     </>

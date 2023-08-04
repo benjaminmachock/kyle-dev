@@ -11,48 +11,86 @@ const Header = () => {
   return (
     <>
       <header data-bs-theme="dark">
-        <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="https://www.foxnews.com">
+        <nav
+          className="navbar navbar-expand-md bg-dark sticky-top border-bottom"
+          data-bs-theme="dark"
+        >
+          <div className="container">
+            <a className="navbar-brand d-md-none" href=".">
+              <svg className="bi" width="24" height="24"></svg>
               KJ
             </a>
             <button
               className="navbar-toggler"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarCollapse"
-              aria-controls="navbarCollapse"
-              aria-expanded="false"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvas"
+              aria-controls="#offcanvas"
               aria-label="Toggle navigation"
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarCollapse">
-              <ul className="navbar-nav me-auto mb-2 mb-md-0">
-                <li className="nav-item">
-                  <a
-                    className="nav-link active"
-                    aria-current="page"
-                    href="https://www.foxnews.com"
-                  >
-                    Book
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="https://www.foxnews.com">
-                    Merch
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    aria-disabled="true"
-                    href="https://www.foxnews.com"
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
+            <div
+              className="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="#offcanvas"
+              aria-labelledby="#offcanvasLabel"
+            >
+              <div className="offcanvas-header">
+                <h5 className="offcanvas-title" id="#offcanvasLabel">
+                  Aperture
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div className="offcanvas-body">
+                <ul className="navbar-nav flex-grow-1 justify-content-between">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      <svg className="bi" width="24" height="24"></svg>
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      KJ
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      Book
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      Schedule
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      KJ
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      Merch
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      Contact
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      <svg className="bi" width="24" height="24"></svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
