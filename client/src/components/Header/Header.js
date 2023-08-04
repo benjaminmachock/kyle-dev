@@ -16,7 +16,10 @@ const Header = () => {
           data-bs-theme="dark"
         >
           <div className="container">
-            <a className="navbar-brand d-md-none" href=".">
+            <a
+              className="navbar-brand d-md-none"
+              href="https://www.foxnews.com"
+            >
               <svg className="bi" width="24" height="24"></svg>
               KJ
             </a>
@@ -55,37 +58,37 @@ const Header = () => {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="https://www.foxnews.com">
                       KJ
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="https://www.foxnews.com">
                       Book
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="https://www.foxnews.com">
                       Schedule
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="https://www.foxnews.com">
                       KJ
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="https://www.foxnews.com">
                       Merch
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="https://www.foxnews.com">
                       Contact
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="https://www.foxnews.com">
                       <svg className="bi" width="24" height="24"></svg>
                     </a>
                   </li>
