@@ -18,7 +18,7 @@ const ImageSection = () => {
               Book For Your Private Party
             </h3>
             <div className="d-flex gap-3 justify-content-center lead fw-normal">
-              <a className="icon-link" href="#">
+              <a className="icon-link" href="https://www.foxnews.com">
                 BOOK
                 <svg className="bi"></svg>
               </a>
