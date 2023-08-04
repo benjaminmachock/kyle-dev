@@ -53,7 +53,7 @@ const Header = () => {
               <div className="offcanvas-body">
                 <ul className="navbar-nav flex-grow-1 justify-content-between">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="https://www.foxnews.com">
                       <svg className="bi" width="24" height="24"></svg>
                     </a>
                   </li>
