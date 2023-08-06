@@ -1,12 +1,10 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { LinkContainer } from "react-router-bootstrap";
+import NavLink from "react-bootstrap/esm/NavLink";
 
 const Header = () => {
-  //Hooks
-
-  //Functions
-
   return (
     <>
       <Navbar
@@ -16,14 +14,24 @@ const Header = () => {
         data-bs-theme="dark"
       >
         <Container>
-          <Navbar.Brand href="/">KJ</Navbar.Brand>
+          <LinkContainer to="/">
+            <Navbar.Brand>KJ</Navbar.Brand>
+          </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/schedule">Schedule</Nav.Link>
-              <Nav.Link href="#link">Book</Nav.Link>
-              <Nav.Link href="#link">Merch</Nav.Link>
-              <Nav.Link href="#link">Contact</Nav.Link>
+              <LinkContainer to="/schedule">
+                <NavLink>Schedule</NavLink>
+              </LinkContainer>
+              <LinkContainer to="/book">
+                <NavLink>Book</NavLink>
+              </LinkContainer>
+              <LinkContainer to="/merchandise">
+                <NavLink>Merch</NavLink>
+              </LinkContainer>
+              <LinkContainer to="/contact">
+                <NavLink>Contact</NavLink>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>
