@@ -2,8 +2,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import Kyle1 from "../images/kyle1alt.jpg";
-import Kyle2 from "../images/kyel2_res.jpg";
+import Kyle1 from "../images/kyle1alt.webp";
+import Kyle2 from "../images/kyle2_res.webp";
 import Kyle3 from "../images/kyle3.jpg";
 import Modal from "../components/Modal/Modal";
 
@@ -18,7 +18,10 @@ const Home = () => {
         <Container>
           <Row>
             <Col xs={12}>
-              <Image src={Kyle2} />
+              <Image
+                src={Kyle2}
+                style={{ width: "1500px", height: "1000px" }}
+              />
             </Col>
           </Row>
         </Container>
@@ -34,7 +37,10 @@ const Home = () => {
         <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
           <div className="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div className="my-3 py-3">
-              <Image src={Kyle1} rounded fluid />
+              <Image
+                src={Kyle1}
+                style={{ width: "1365px", height: "2048px" }}
+              />
             </div>
             <div
               className="bg-body-tertiary shadow-sm mx-auto"
@@ -47,7 +53,10 @@ const Home = () => {
           </div>
           <div className="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div className="my-3 p-3">
-              <Image src={Kyle3} rounded fluid />
+              <Image
+                src={Kyle3}
+                style={{ width: "1000px", height: "1500px" }}
+              />
             </div>
             <div
               className="bg-dark shadow-sm mx-auto"
