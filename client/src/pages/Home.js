@@ -3,12 +3,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Kyle1 from "../images/kyle1alt.jpg";
-import Kyle2 from "../images/kyle2.jpg";
+import Kyle2 from "../images/kyel2_res.jpg";
 import Kyle3 from "../images/kyle3.jpg";
-import Kyle5 from "../images/kyle5.jpg";
-import Kyle4 from "../images/kyle4.jpg";
 import Modal from "../components/Modal/Modal";
-// import BackgroundVideo from "../images/guitar_-_21328 (Original).mp4";
 
 const Home = () => {
   //Hooks
@@ -18,10 +15,10 @@ const Home = () => {
   return (
     <>
       <main>
-        <Container style={{ padding: 0 }}>
+        <Container>
           <Row>
             <Col xs={12}>
-              <Image src={Kyle4} />
+              <Image src={Kyle2} />
             </Col>
           </Row>
         </Container>
