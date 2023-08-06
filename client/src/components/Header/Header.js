@@ -3,6 +3,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
 import NavLink from "react-bootstrap/esm/NavLink";
+import Logo from "../../images/kylejennings logo.png";
+import Image from "react-bootstrap/esm/Image";
 
 const Header = () => {
   return (
@@ -13,9 +15,11 @@ const Header = () => {
         bg="dark"
         data-bs-theme="dark"
       >
-        <Container>
+        <Container fluid>
           <LinkContainer to="/">
-            <Navbar.Brand>KJ</Navbar.Brand>
+            <Navbar.Brand>
+              <Image src={Logo} />
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

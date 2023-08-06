@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Header from "./components/Header/Header";
 import Schedule from "./components/Schedule/Schedule";
 import Book from "./components/Book/Book";
+import Contact from "./components/Contact/Contact";
 
 import Merch from "./components/Merch/Merch";
 import Footer from "./components/Footer/Footer";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/merchandise" element={<Merch />} />
           <Route path="/book" element={<Book />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>
