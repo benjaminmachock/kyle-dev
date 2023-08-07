@@ -9,13 +9,8 @@ import Image from "react-bootstrap/esm/Image";
 const Header = () => {
   return (
     <>
-      <Navbar
-        expand="lg"
-        className="bg-body-tertiary"
-        bg="dark"
-        data-bs-theme="dark"
-      >
-        <Container fluid>
+      <Navbar expand="lg" className="bg-body-tertiary" style={{ padding: 0 }}>
+        <Container fluid style={{ backgroundColor: "#63605F" }}>
           <LinkContainer to="/">
             <Navbar.Brand>
               <Image src={Logo} />
@@ -24,16 +19,16 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <LinkContainer to="/schedule">
+              <LinkContainer to="/schedule" style={{ color: "#e3e3e3" }}>
                 <NavLink>Schedule</NavLink>
               </LinkContainer>
-              <LinkContainer to="/book">
+              <LinkContainer to="/book" style={{ color: "#e3e3e3" }}>
                 <NavLink>Book</NavLink>
               </LinkContainer>
-              <LinkContainer to="/merchandise">
+              <LinkContainer to="/merchandise" style={{ color: "#e3e3e3" }}>
                 <NavLink>Merch</NavLink>
               </LinkContainer>
-              <LinkContainer to="/contact">
+              <LinkContainer to="/contact" style={{ color: "#e3e3e3" }}>
                 <NavLink>Contact</NavLink>
               </LinkContainer>
             </Nav>
