@@ -14,7 +14,7 @@ function Example() {
         variant="danger"
         onClick={handleShow}
         size="lg"
-        style={{ fontSize: 40 }}
+        style={{ fontSize: 40, color: "#e3e3e3" }}
       >
         BOOK KYLE
       </Button>
