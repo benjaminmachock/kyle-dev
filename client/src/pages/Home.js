@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Kyle1 from "../images/kyle1alt.jpg";
-import Kyle6 from "../images/kyle6.jpg";
+// import Kyle6 from "../images/kyle6.jpg";
 import Kyle2 from "../images/kyle2_res.webp";
 import Kyle3 from "../images/kyle3.jpg";
 import Kyle5 from "../images/kyle5.jpg";
