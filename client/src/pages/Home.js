@@ -3,14 +3,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Kyle1 from "../images/kyle1alt.jpg";
-// import Kyle6 from "../images/kyle6.jpg";
 import Kyle2 from "../images/kyle2_res.webp";
 import Kyle3 from "../images/kyle3.jpg";
-import Kyle5 from "../images/kyle5.jpg";
+import Kyle5 from "../images/kyle5.webp";
 import Modal from "../components/Modal/Modal";
-import Kyle4 from "../images/kyle4 (3).jpg";
 import Kyle4b from "../images/kyle4.jpg";
 import Kyle7 from "../images/kyle7.JPG";
+import Kyle3a from "../images/kyle3a.webp";
 
 const Home = () => {
   //Hooks
@@ -50,7 +49,7 @@ const Home = () => {
           <Row>
             <Col xs={4}>
               <Image src={Kyle5} fluid rounded />
-              <Image src={Kyle4} fluid rounded />
+              <Image src={Kyle3a} fluid rounded />
             </Col>
             <Col xs={4}>
               <Image src={Kyle1} fluid rounded />
