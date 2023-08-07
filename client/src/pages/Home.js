@@ -2,14 +2,17 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import Kyle1 from "../images/kyle1alt.jpg";
+// import Kyle1 from "../images/kyle1alt.jpg";
 import Kyle2 from "../images/kyle2_res.webp";
 import Kyle3 from "../images/kyle3.jpg";
 import Kyle5 from "../images/kyle5.webp";
 import Modal from "../components/Modal/Modal";
 import Kyle4b from "../images/kyle4.jpg";
 import Kyle7 from "../images/kyle7.JPG";
-import Kyle3a from "../images/kyle3a.webp";
+// import Kyle3a from "../images/kyle3a.webp";
+import Kyle10 from "../images/IMG_0593.JPG";
+import Kyle11 from "../images/IMG_0596.JPG";
+import Kyle12 from "../images/IMG_7170.JPG";
 
 const Home = () => {
   //Hooks
@@ -31,7 +34,6 @@ const Home = () => {
             <Modal />
           </div>
         </div>
-
         <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
           <div className="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div className="my-3 py-3">
@@ -40,7 +42,7 @@ const Home = () => {
           </div>
           <div className="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div className="my-3 p-3">
-              <Image src={Kyle3} fluid />
+              <Image src={Kyle7} fluid />
             </div>
           </div>
         </div>
@@ -49,14 +51,14 @@ const Home = () => {
           <Row>
             <Col xs={4}>
               <Image src={Kyle5} fluid rounded />
-              <Image src={Kyle3a} fluid rounded />
+              <Image src={Kyle11} fluid rounded />
             </Col>
             <Col xs={4}>
-              <Image src={Kyle1} fluid rounded />
+              <Image src={Kyle12} fluid rounded />
             </Col>
             <Col xs={4}>
               <Image src={Kyle4b} fluid rounded />
-              <Image src={Kyle7} fluid rounded />
+              <Image src={Kyle10} fluid rounded />
             </Col>
           </Row>
         </Container>
