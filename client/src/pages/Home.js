@@ -25,7 +25,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col xs={12}>
-              <Image src={Kyle2} fluid />
+              <Image src={Kyle2} fluid style={{ marginTop: "1rem" }} />
             </Col>
           </Row>
         </Container>
