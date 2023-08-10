@@ -38,13 +38,7 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-        <Container>
-          <Row>
-            <Col xs={12}>
-              <Image src={Kyle2} />
-            </Col>
-          </Row>
-        </Container>
+
         <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
           <div className="col-md-6 p-lg-5 mx-auto my-5">
             <Modal />
