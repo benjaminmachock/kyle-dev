@@ -26,14 +26,32 @@ const Home = () => {
         <Container>
           <Row>
             <Col xs={12} lg={6}>
-              <Image src={Kyle2} fluid style={{ marginTop: "1rem" }} />
+              <Image
+                src={Kyle2}
+                fluid
+                style={{
+                  marginTop: "1rem",
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
             </Col>
             <Col xs={12} lg={6}>
               <a
                 href="https://www.ticketmaster.com/event/08005EF8E7E0386E?fbclid=IwAR0D3NnRy73sVkRbNLYPBMB1UO9zVGwcYzAa8dGUTfk9vYqiJujrs1uuEbY"
                 target="no_blank"
               >
-                <Image src={Concert} fluid style={{ marginTop: "1rem" }} />
+                <Image
+                  src={Concert}
+                  fluid
+                  style={{
+                    marginTop: "1rem",
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
               </a>
             </Col>
           </Row>
