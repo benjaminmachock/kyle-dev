@@ -18,7 +18,6 @@ function Example() {
       >
         BOOK KYLE
       </Button>
-
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Fill out Form</Modal.Title>

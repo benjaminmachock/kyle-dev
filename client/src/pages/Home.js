@@ -1,4 +1,5 @@
 import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
@@ -6,7 +7,7 @@ import Image from "react-bootstrap/Image";
 import Kyle2 from "../images/kyle2_res.webp";
 import Kyle3 from "../images/kyle3.jpg";
 import Kyle5 from "../images/kyle5.webp";
-import Modal from "../components/Modal/Modal";
+// import Modal from "../components/Modal/Modal";
 import Kyle4b from "../images/kyle4.jpg";
 import Kyle7 from "../images/kyle7.JPG";
 // import Kyle3a from "../images/kyle3a.webp";
@@ -58,8 +59,19 @@ const Home = () => {
         </Container>
 
         <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-          <div className="col-md-6 p-lg-5 mx-auto my-5">
-            <Modal />
+          <div className="col-md-6 p-lg-5 mx-auto my-2">
+            <a
+              href="https://www.ticketmaster.com/event/08005EF8E7E0386E?fbclid=IwAR0D3NnRy73sVkRbNLYPBMB1UO9zVGwcYzAa8dGUTfk9vYqiJujrs1uuEbY"
+              target="no_blank"
+            >
+              <Button
+                variant="danger"
+                size="lg"
+                style={{ fontSize: 40, color: "#e3e3e3" }}
+              >
+                BUY TICKETS
+              </Button>
+            </a>
           </div>
         </div>
         <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
