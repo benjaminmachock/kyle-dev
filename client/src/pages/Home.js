@@ -13,6 +13,7 @@ import Kyle7 from "../images/kyle7.JPG";
 import Kyle10 from "../images/IMG_0593.JPG";
 import Kyle11 from "../images/IMG_0596.JPG";
 import Kyle12 from "../images/IMG_7170.JPG";
+import Concert from "../images/KJ_Kalamazoo Social Media Post.png";
 
 const Home = () => {
   //Hooks
@@ -24,8 +25,23 @@ const Home = () => {
       <main>
         <Container>
           <Row>
-            <Col xs={12}>
+            <Col xs={12} lg={6}>
               <Image src={Kyle2} fluid style={{ marginTop: "1rem" }} />
+            </Col>
+            <Col xs={12} lg={6}>
+              <a
+                href="https://www.ticketmaster.com/event/08005EF8E7E0386E?fbclid=IwAR0D3NnRy73sVkRbNLYPBMB1UO9zVGwcYzAa8dGUTfk9vYqiJujrs1uuEbY"
+                target="no_blank"
+              >
+                <Image src={Concert} fluid style={{ marginTop: "1rem" }} />
+              </a>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row>
+            <Col xs={12}>
+              <Image src={Kyle2} />
             </Col>
           </Row>
         </Container>
