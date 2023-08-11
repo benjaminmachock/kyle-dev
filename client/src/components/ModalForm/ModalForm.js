@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 
-function Example() {
+function ModalForm() {
   const [show, setShow] = useState(false);
 
   //JORDAN WILL WORK ON EMAIL.JS integration - test email submission to both of our emails.  devsdeviant@gmail.com
@@ -99,4 +99,4 @@ function Example() {
   );
 }
 
-export default Example;
+export default ModalForm;

@@ -7,7 +7,7 @@ import Image from "react-bootstrap/Image";
 import Kyle2 from "../images/kyle2_res.webp";
 import Kyle3 from "../images/kyle3.jpg";
 import Kyle5 from "../images/kyle5.webp";
-import Modal from "../components/Modal/Modal";
+import ModalForm from "../components/ModalForm/ModalForm";
 import Kyle4b from "../images/kyle4.jpg";
 import Kyle7 from "../images/kyle7.JPG";
 // import Kyle3a from "../images/kyle3a.webp";
@@ -90,7 +90,7 @@ const Home = () => {
 
         <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
           <div className="col-md-6 p-lg-5 mx-auto my-2">
-            <Modal />
+            <ModalForm />
           </div>
         </div>
         <Container fluid>
