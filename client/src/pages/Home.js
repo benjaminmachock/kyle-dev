@@ -65,8 +65,9 @@ const Home = () => {
               target="no_blank"
             >
               <Button
-                variant="danger"
+                variant="dark"
                 size="lg"
+                className="animatedBorder"
                 style={{ fontSize: 40, color: "#e3e3e3" }}
               >
                 BUY TICKETS
