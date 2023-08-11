@@ -7,18 +7,18 @@ function Example() {
   const [show, setShow] = useState(false);
 
   //formstate
-  const [contactForm, setContactForm] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    requestedData: "",
-    requestedTime: "",
-    venueName: "",
-    venueAddress: "",
-    eventType: "",
-    eventName: "",
-    estimatedAttendance: "",
-  });
+  // const [contactForm, setContactForm] = useState({
+  //   name: "",
+  //   phone: "",
+  //   email: "",
+  //   requestedData: "",
+  //   requestedTime: "",
+  //   venueName: "",
+  //   venueAddress: "",
+  //   eventType: "",
+  //   eventName: "",
+  //   estimatedAttendance: "",
+  // });
 
   //function will be responsible for submitting information and closing modal
   const handleClose = () => setShow(false);
