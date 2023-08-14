@@ -96,3 +96,14 @@ code {
     --gradY: 0%;
   }
 }
+
+.navLinks .customLink {
+  margin: 0 4rem;
+}
+
+.logo:active {
+  transform: scale(0.9);
+}
+.customLink:active {
+  font-size: calc(36px * 0.9);
+}
