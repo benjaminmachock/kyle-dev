@@ -58,8 +58,8 @@ const Home = () => {
           </Row>
         </Container>
 
-        <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-          <div className="col-md-6 p-lg-5 mx-auto my-2">
+        <div className="position-relative overflow-hidden p-1 p-md-3 m-md-1 text-center">
+          <div className="col-md-6 p-lg-5 mx-auto">
             <a
               href="https://www.ticketmaster.com/event/08005EF8E7E0386E?fbclid=IwAR0D3NnRy73sVkRbNLYPBMB1UO9zVGwcYzAa8dGUTfk9vYqiJujrs1uuEbY"
               target="no_blank"
@@ -88,7 +88,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+        <div className="position-relative overflow-hidden p-1 p-md-3 m-md-1 text-center">
           <div className="col-md-6 p-lg-5 mx-auto my-2">
             <ModalForm />
           </div>

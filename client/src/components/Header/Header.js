@@ -10,7 +10,11 @@ const Header = () => {
   return (
     <>
       <Navbar expand="lg" className="bg-body-tertiary" style={{ padding: 0 }}>
-        <Container fluid style={{ backgroundColor: "#63605F" }}>
+        <Container
+          fluid
+          className="headerContainer"
+          style={{ backgroundColor: "#63605F" }}
+        >
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto navLinks">

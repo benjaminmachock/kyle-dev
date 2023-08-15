@@ -145,12 +145,16 @@ function ModalForm() {
             <Form.Group className="mb-3" controlId="formBasicVenueAttendance">
               <Form.Control type="number" placeholder="Estimated Attendance" />
             </Form.Group>
-            <Button type="submit" variant="danger" onClick={handleClose}>
+            <Button
+              type="submit"
+              variant="dark"
+              className="animatedBorder"
+              onClick={handleClose}
+            >
               SUBMIT
             </Button>
           </Form>
         </Modal.Body>
-        <Modal.Footer></Modal.Footer>
       </Modal>
     </>
   );

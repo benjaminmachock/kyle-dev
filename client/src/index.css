@@ -44,7 +44,7 @@ code {
 }
 
 .animatedBorder {
-  border-radius: 0;
+  /* border-radius: 0; */
   border: 0.25rem solid;
   border-image: conic-gradient(
       from var(--angle),
@@ -99,6 +99,7 @@ code {
 
 .navLinks .customLink {
   margin: 0 4rem;
+  padding-top: 4rem;
 }
 
 .logo:active {
@@ -106,4 +107,18 @@ code {
 }
 .customLink:active {
   font-size: calc(36px * 0.9);
+}
+
+.headerContainer {
+  height: 11vh;
+  box-shadow: 0 6px 6px 0 #000000a4;
+}
+
+.footerStyle {
+  height: 13vh;
+  box-shadow: 0 -6px 6px 0 #000000a4;
+}
+
+.footerLinks {
+  margin: 0 2rem;
 }
