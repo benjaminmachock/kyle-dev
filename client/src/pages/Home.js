@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
@@ -18,6 +19,30 @@ import Concert from "../images/KJ_Kalamazoo Social Media Post.png";
 
 const Home = () => {
   //Hooks
+
+  const [isButtonScrolling, setIsButtonScrolling] = useState(false);
+  const [scrollPercentage, setScrollPercentage] = useState(0);
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    const scrollHeight = document.body.scrollHeight - window.innerHeight;
+    const newScrollPercentage = (scrollY / scrollHeight) * 100;
+    setScrollPercentage(newScrollPercentage);
+
+    if (isButtonScrolling) {
+      window.scrollTo({
+        left: (newScrollPercentage * scrollHeight) / 100,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isButtonScrolling]);
 
   //Functions
 
@@ -76,12 +101,12 @@ const Home = () => {
           </div>
         </div>
         <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-          <div className="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div className="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div className="my-3 py-3">
               <Image src={Kyle3} fluid />
             </div>
           </div>
-          <div className="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div className="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div className="my-3 p-3">
               <Image src={Kyle7} fluid />
             </div>
@@ -89,7 +114,10 @@ const Home = () => {
         </div>
 
         <div className="position-relative overflow-hidden p-1 p-md-3 m-md-1 text-center">
-          <div className="col-md-6 p-lg-5 mx-auto my-2">
+          <div
+            className="col-md-6 p-lg-5 mx-auto my-2 modalContainer"
+            style={{ right: `${-100 + scrollPercentage}%` }}
+          >
             <ModalForm />
           </div>
         </div>
