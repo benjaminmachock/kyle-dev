@@ -17,7 +17,7 @@ const Header = () => {
         >
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mx-auto navLinks">
+            <Nav className="mx-auto navLinks justify-content-center flex-sm-row">
               <LinkContainer
                 to="/schedule"
                 className="customLink"

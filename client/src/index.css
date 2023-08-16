@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Rye", cursive;
-  font-size: 36px;
+  font-size: 2.25rem;
   background-color: #e3e3e3;
 }
 
@@ -46,7 +46,7 @@ code {
 .animatedBorder {
   border-radius: 0;
   border: 0.25rem solid;
-  box-shadow: 0 0 0 0.25rem #7b3b3b;
+  box-shadow: 0 6px 6px 0 #7b3b3b;
   border-image: conic-gradient(
       from var(--angle),
       var(--c2),
@@ -98,10 +98,22 @@ code {
   }
 }
 
-.navLinks .customLink {
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.customLink {
+  margin: 0 4rem;
+  font-size: 2.25rem;
+}
+
+/* .navLinks .customLink {
   margin: 0 4rem;
   padding-top: 4rem;
-}
+} */
 
 .logo:active {
   transform: scale(0.9);
