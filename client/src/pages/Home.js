@@ -55,6 +55,7 @@ const Home = () => {
               <Image
                 src={Kyle2}
                 fluid
+                className="img"
                 style={{
                   marginTop: "1rem",
                   width: "100%",
@@ -71,6 +72,7 @@ const Home = () => {
                 <Image
                   src={Concert}
                   fluid
+                  className="img"
                   style={{
                     marginTop: "1rem",
                     width: "100%",
@@ -103,12 +105,12 @@ const Home = () => {
         <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
           <div className="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div className="my-3 py-3">
-              <Image src={Kyle3} fluid />
+              <Image src={Kyle3} fluid className="bookingImage" />
             </div>
           </div>
           <div className="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div className="my-3 p-3">
-              <Image src={Kyle7} fluid />
+              <Image src={Kyle7} fluid className="bookingImage" />
             </div>
           </div>
         </div>
