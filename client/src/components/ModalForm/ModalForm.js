@@ -65,7 +65,7 @@ function ModalForm() {
       </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>We Will Contact You ASAP</Modal.Title>
+          <Modal.Title>Ready to Rock? Let's Book It!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form ref={formRef} onSubmit={handleSubmit}>

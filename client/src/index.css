@@ -1,14 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Rye", cursive;
+  font-family: "Righteous", cursive;
   font-size: 2.25rem;
-  background-color: #e3e3e3;
+  background-image: url(https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80);
+  background-color: #000;
 }
 
-code {
+/* code {
   font-family: "Rye", cursive;
-}
+} */
 
 /* #video {
   position: fixed;
@@ -21,80 +22,36 @@ code {
   --angle: 90deg;
   --gradX: 100%;
   --gradY: 50%;
-  --c1: #7b3b3b;
-  --c2: rgba(255, 168, 168, 0.1);
-}
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 90deg;
-  inherits: true;
-}
-
-@property --gradX {
-  syntax: "<percentage>";
-  initial-value: 50%;
-  inherits: true;
-}
-
-@property --gradY {
-  syntax: "<percentage>";
-  initial-value: 0%;
-  inherits: true;
+  --c1: rgb(38, 57, 77);
+  --c2: rgba(252, 252, 252, 0.1);
 }
 
 .animatedBorder {
-  border-radius: 0;
-  border: 0.25rem solid;
-  box-shadow: 0 6px 6px 0 #7b3b3b;
-  border-image: conic-gradient(
-      from var(--angle),
-      var(--c2),
-      var(--c1) 0.1turn,
-      var(--c1) 0.15turn,
-      var(--c2) 0.25turn
-    )
-    30;
-  animation: borderRotate var(--d) linear infinite forwards;
+  position: relative;
+  background: linear-gradient(180deg, var(--c1), var(--c2));
+  animation: pulseBackgroundColor var(--d) linear infinite forwards;
+  border-radius: 0.25rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  overflow: hidden;
 }
 
-.an:nth-child(2) {
-  border-image: radial-gradient(
-      ellipse at var(--gradX) var(--gradY),
-      var(--c1),
-      var(--c1) 10%,
-      var(--c2) 40%
-    )
-    30;
-  animation: borderRadial var(--d) linear infinite forwards;
+.animatedBorder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
 }
 
-@keyframes borderRotate {
+@keyframes pulseBackgroundColor {
+  0%,
   100% {
-    --angle: 420deg;
+    background-color: var(--c1);
   }
-}
-
-@keyframes borderRadial {
-  20% {
-    --gradX: 100%;
-    --gradY: 50%;
-  }
-  40% {
-    --gradX: 100%;
-    --gradY: 100%;
-  }
-  60% {
-    --gradX: 50%;
-    --gradY: 100%;
-  }
-  80% {
-    --gradX: 0%;
-    --gradY: 50%;
-  }
-  100% {
-    --gradX: 50%;
-    --gradY: 0%;
+  50% {
+    background-color: var(--c2);
   }
 }
 
@@ -105,15 +62,15 @@ code {
   padding: 1rem 0;
 }
 
+.img {
+  border-radius: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
 .customLink {
   margin: 0 4rem;
   font-size: 2.25rem;
 }
-
-/* .navLinks .customLink {
-  margin: 0 4rem;
-  padding-top: 4rem;
-} */
 
 .logo:active {
   transform: scale(0.9);
@@ -124,28 +81,28 @@ code {
 
 .headerContainer {
   height: 11vh;
-  box-shadow: 0 6px 6px 0 #000000a4;
+  box-shadow: 0 6px 6px 0 rgb(38, 57, 77);
 }
 
 .footerStyle {
   height: 13vh;
-  box-shadow: 0 -6px 6px 0 #000000a4;
+  box-shadow: 0 -6px 6px 0 rgb(38, 57, 77);
 }
 
 .footerLinks {
   margin: 0 2rem;
 }
 
-@keyframes slideIn {
+/* @keyframes slideIn {
   from {
     transform: translateX(-100%);
   }
   to {
     transform: translateX(0%);
   }
-}
+} */
 
-.modalContainer {
+/* .modalContainer {
   position: fixed;
   top: 0;
   right: -60%;
@@ -155,43 +112,33 @@ code {
   overflow-y: auto;
   transition: slideIn 0.5s ease-in-out;
   z-index: 100;
+} */
+
+.booking-image-container {
+  margin: 0.5rem 0;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.img {
-  --s: 15px; /* size of the frame */
-  --b: 2px; /* border thickness */
-  --w: 200px; /* width of the image */
-  --c: #7b3b3b;
-
-  width: var(--w);
-  aspect-ratio: 1;
-  object-fit: cover;
-  padding: calc(2 * var(--s));
-  --_g: var(--c) var(--b), #0000 0 calc(100% - var(--b)), var(--c) 0;
-  background: linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
-    linear-gradient(90deg, var(--_g)) 50% / var(--_i, 100%) 100% no-repeat;
-  outline: calc(var(--w) / 2) solid #0009;
-  outline-offset: calc(var(--w) / -2 - 2 * var(--s));
-  transition: 0.4s;
-  cursor: pointer;
-}
-.img:hover {
-  outline: var(--b) solid var(--c);
-  outline-offset: calc(var(--s) / -2);
-  --_i: calc(100% - 2 * var(--s));
+.booking-image-container .img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.bookingImage {
-  --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
-  --m: left var(--_i, 0%) top var(--_g), bottom var(--_i, 0%) left var(--_g),
-    top var(--_i, 0%) right var(--_g), right var(--_i, 0%) bottom var(--_g);
-  -webkit-mask: var(--m);
-  mask: var(--m);
-  filter: grayscale();
-  transition: 0.3s linear;
-  cursor: pointer;
+.custom-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
-.bookingImage:hover {
-  --_i: 10%;
-  filter: grayscale(0);
+
+.custom-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
