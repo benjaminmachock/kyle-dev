@@ -70,6 +70,7 @@ const Home = () => {
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
+                  border: "5px solid white",
                 }}
               />
             </Col>
@@ -87,6 +88,7 @@ const Home = () => {
                     width: "100%",
                     height: "100%",
                     objectFit: "cover",
+                    border: "5px solid white",
                   }}
                 />
               </a>
@@ -114,17 +116,32 @@ const Home = () => {
         <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
           <div className="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div className="my-3 py-3 booking-image-container">
-              <Image src={Kyle3} fluid className="img" />
+              <Image
+                src={Kyle3}
+                fluid
+                className="img"
+                style={{ border: "5px solid white" }}
+              />
             </div>
           </div>
           <div className="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div className="my-3 py-3 booking-image-container">
-              <Image src={Kyle7} fluid className="img" />
+              <Image
+                src={Kyle7}
+                fluid
+                className="img"
+                style={{ border: "5px solid white" }}
+              />
             </div>
           </div>
           <div className="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div className="my-3 p-3 booking-image-container">
-              <Image src={Kyle11} fluid className="img" />
+              <Image
+                src={Kyle11}
+                fluid
+                className="img"
+                style={{ border: "5px solid white" }}
+              />
             </div>
           </div>
         </div>
