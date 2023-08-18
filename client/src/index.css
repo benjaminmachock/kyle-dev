@@ -140,3 +140,20 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
+
+.rounded-square {
+  width: 22vw;
+  height: 22vh;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.video-link {
+  text-decoration: none;
+  color: #000;
+}
