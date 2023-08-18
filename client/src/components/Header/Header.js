@@ -9,7 +9,12 @@ import Image from "react-bootstrap/Image";
 const Header = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: "#000" }}>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        style={{ backgroundColor: "#000" }}
+        className="headerContainer"
+      >
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>

@@ -80,13 +80,11 @@ body {
 }
 
 .headerContainer {
-  height: 11vh;
-  box-shadow: 0 6px 6px 0 rgb(38, 57, 77);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .footerStyle {
-  height: 13vh;
-  box-shadow: 0 -6px 6px 0 rgb(38, 57, 77);
+  box-shadow: rgb(38, 57, 77) 0px -20px 30px -10px;
 }
 
 .footerLinks {
