@@ -13,7 +13,7 @@ const Header = () => {
         <Container
           fluid
           className="headerContainer"
-          style={{ backgroundColor: "#63605F" }}
+          style={{ backgroundColor: "#000" }}
         >
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
