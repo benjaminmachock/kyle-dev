@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Schedule from "./components/Schedule/Schedule";
 import Book from "./components/Book/Book";
 import Contact from "./components/Contact/Contact";
-
+import KyleCarousel from "./components/Carousel/Carousel";
 import Merch from "./components/Merch/Merch";
 import Footer from "./components/Footer/Footer";
 
@@ -21,6 +21,7 @@ function App() {
           <Route path="/book" element={<Book />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/landing" element={<Land />} />
+          <Route path="/carousel" element={<KyleCarousel />} />
         </Routes>
         <Footer />
       </Router>
