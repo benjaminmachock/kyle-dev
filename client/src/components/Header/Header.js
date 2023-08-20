@@ -37,6 +37,9 @@ const Header = () => {
               <LinkContainer style={{ color: "white" }} to="/contact">
                 <NavLink>Contact </NavLink>
               </LinkContainer>
+              <LinkContainer style={{ color: "white" }} to="/meet-kyle">
+                <NavLink>Meet Kyle </NavLink>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>
