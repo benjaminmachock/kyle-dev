@@ -31,8 +31,8 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <h3 style={{ color: "white", textAlign: "center" }}>SOCIALS</h3>
         <hr style={{ color: "white" }} />
+        <h3 style={{ color: "white", textAlign: "center" }}>SOCIALS</h3>
         <Container>
           <Row>
             <Col
