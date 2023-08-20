@@ -1,3 +1,6 @@
+import Container from "react-bootstrap/esm/Container";
+import Row from "react-bootstrap/esm/Row";
+import Col from "react-bootstrap/esm/Col";
 import KyleCarousel from "../components/Carousel/Carousel";
 import Button from "react-bootstrap/Button";
 
@@ -6,10 +9,6 @@ import Image from "react-bootstrap/Image";
 import Kyle3 from "../images/kyle3.jpg";
 
 import ModalForm from "../components/ModalForm/ModalForm";
-
-import Kyle7 from "../images/kyle7.JPG";
-
-import Kyle11 from "../images/IMG_0596.JPG";
 
 const Home = () => {
   //Hooks
@@ -61,44 +60,17 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-          <div className="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div className="my-3 py-3 booking-image-container">
-              <Image
-                src={Kyle3}
-                fluid
-                className="img"
-                style={{ border: "5px solid white" }}
-              />
-            </div>
-          </div>
-          <div className="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div className="my-3 py-3 booking-image-container">
-              <Image
-                src={Kyle7}
-                fluid
-                className="img"
-                style={{ border: "5px solid white" }}
-              />
-            </div>
-          </div>
-          <div className="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div className="my-3 p-3 booking-image-container">
-              <Image
-                src={Kyle11}
-                fluid
-                className="img"
-                style={{ border: "5px solid white" }}
-              />
-            </div>
-          </div>
-        </div>
+
+        <Container fluid>
+          <Row>
+            <Col className="text-center">
+              <Image src={Kyle3} style={{ border: "5px solid white" }} />
+            </Col>
+          </Row>
+        </Container>
 
         <div className="position-relative overflow-hidden p-1 p-md-3 m-md-1 text-center">
-          <div
-            className="col-md-6 p-lg-5 mx-auto my-2 modalContainer"
-            // style={{ right: `${-100 + scrollPercentage}%` }}
-          >
+          <div className="col-md-6 p-lg-5 mx-auto my-2 modalContainer">
             <ModalForm />
           </div>
         </div>
