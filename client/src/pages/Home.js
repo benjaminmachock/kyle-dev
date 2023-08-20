@@ -1,5 +1,11 @@
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 import KyleCarousel from "../components/Carousel/Carousel";
 import Button from "react-bootstrap/Button";
+
+import { FaInstagram, FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Home = () => {
   //Hooks
@@ -27,6 +33,45 @@ const Home = () => {
             </a>
           </div>
         </div>
+
+        <Container>
+          <Row>
+            <Col>
+              <a
+                className="footerLinks"
+                style={{ color: "#e3e3e3" }}
+                href="https://instagram.com/kylejennings13"
+                target="no_blank"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                className="footerLinks"
+                style={{ color: "#e3e3e3" }}
+                href="https://twitter.com/kylejennings13"
+                target="no_blank"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                className="footerLinks"
+                style={{ color: "#e3e3e3" }}
+                href="https://facebook.com/kylejenningsmusic"
+                target="no_blank"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                className="footerLinks"
+                style={{ color: "#e3e3e3" }}
+                href="https://youtube.com/kylejenningsmusiconline"
+                target="no_blank"
+              >
+                <FaYoutube />
+              </a>
+            </Col>
+          </Row>
+        </Container>
       </main>
     </>
   );
