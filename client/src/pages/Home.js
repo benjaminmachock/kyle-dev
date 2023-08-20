@@ -1,29 +1,15 @@
-// import React, { useState, useEffect } from "react";
-import Container from "react-bootstrap/Container";
 import KyleCarousel from "../components/Carousel/Carousel";
 import Button from "react-bootstrap/Button";
 
 import Image from "react-bootstrap/Image";
-import Kyle1 from "../images/kyle1alt.jpg";
 
 import Kyle3 from "../images/kyle3.jpg";
-import Kyle5 from "../images/kyle5.webp";
+
 import ModalForm from "../components/ModalForm/ModalForm";
-import Kyle4b from "../images/kyle4.jpg";
+
 import Kyle7 from "../images/kyle7.JPG";
-import Kyle3a from "../images/kyle3a.webp";
-import Kyle10 from "../images/IMG_0593.JPG";
+
 import Kyle11 from "../images/IMG_0596.JPG";
-import Kyle12 from "../images/IMG_7170.JPG";
-
-const imageGroups = [
-  [Kyle3a, ""],
-  ["", Kyle10],
-  [Kyle5, Kyle4b],
-
-  ["", Kyle1],
-  [Kyle12, ""],
-];
 
 const Home = () => {
   //Hooks
@@ -116,32 +102,6 @@ const Home = () => {
             <ModalForm />
           </div>
         </div>
-        <Container fluid>
-          {/* <Row>
-            <Col xs={4}>
-              <Image src={Kyle5} fluid className="kylePicStyle" />
-              <Image src={Kyle11} fluid className="kylePicStyle" />
-            </Col>
-            <Col xs={4}>
-              <Image src={Kyle12} fluid className="kylePicStyle" />
-            </Col>
-            <Col xs={4}>
-              <Image src={Kyle4b} fluid className="kylePicStyle" />
-              <Image src={Kyle10} fluid className="kylePicStyle" />
-            </Col>
-          </Row> */}
-          <ul className="custom-row">
-            {imageGroups.map((imageGroup, colIndex) => (
-              <li key={colIndex} className="custom-col">
-                {imageGroup.map((src, rowIndex) => (
-                  <div key={rowIndex}>
-                    <Image src={src} fluid className="img" />
-                  </div>
-                ))}
-              </li>
-            ))}
-          </ul>
-        </Container>
       </main>
     </>
   );
