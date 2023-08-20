@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import KyleCarousel from "../components/KyleCarousel/KyleCarousel";
 import Button from "react-bootstrap/Button";
-import { FaInstagram, FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
+import { SocialIcon } from "react-social-icons";
 
 const Home = () => {
   //Hooks
@@ -31,45 +31,45 @@ const Home = () => {
             </a>
           </div>
         </div>
-
+        <h3 style={{ color: "white", textAlign: "center" }}>SOCIALS</h3>
+        <hr style={{ color: "white" }} />
         <Container>
           <Row>
-            <Col>
-              <a
-                className="footerLinks"
-                style={{ color: "#e3e3e3" }}
-                href="https://instagram.com/kylejennings13"
-                target="no_blank"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                className="footerLinks"
-                style={{ color: "#e3e3e3" }}
-                href="https://twitter.com/kylejennings13"
-                target="no_blank"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                className="footerLinks"
-                style={{ color: "#e3e3e3" }}
-                href="https://facebook.com/kylejenningsmusic"
-                target="no_blank"
-              >
-                <FaFacebook />
-              </a>
-              <a
-                className="footerLinks"
-                style={{ color: "#e3e3e3" }}
-                href="https://youtube.com/kylejenningsmusiconline"
-                target="no_blank"
-              >
-                <FaYoutube />
-              </a>
+            <Col
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <SocialIcon
+                style={{ margin: ".5rem" }}
+                url="https://instagram.com/kylejennings13"
+                network="instagram"
+                target="_blank"
+              />
+              <SocialIcon
+                style={{ margin: ".5rem" }}
+                url="https://twitter.com/kylejennings13"
+                network="twitter"
+                target="_blank"
+              />
+              <SocialIcon
+                style={{ margin: ".5rem" }}
+                url="https://facebook.com/kylejenningsmusic"
+                network="facebook"
+                target="_blank"
+              />
+              <SocialIcon
+                style={{ margin: ".5rem" }}
+                url="https://youtube.com/kylejenningsmusiconline"
+                network="youtube"
+                target="_blank"
+              />
             </Col>
           </Row>
         </Container>
+        <hr style={{ color: "white" }} />
       </main>
     </>
   );
