@@ -7,7 +7,7 @@ const Contact = () => {
 
   return (
     <>
-      <h1>Happy Hacking!</h1>
+      <h1 style={{ color: "white" }}>UNDER CONSTRUCTION</h1>
     </>
   );
 };
