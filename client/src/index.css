@@ -157,3 +157,10 @@ body {
   text-decoration: none;
   color: #000;
 }
+
+/* removes carousel button icons and indicators */
+.carousel-control-prev-icon,
+.carousel-control-next,
+.carousel-indicators {
+  display: none;
+}
