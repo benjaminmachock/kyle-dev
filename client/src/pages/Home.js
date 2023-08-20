@@ -1,8 +1,6 @@
 import KyleCarousel from "../components/Carousel/Carousel";
 import Button from "react-bootstrap/Button";
 
-import ModalForm from "../components/ModalForm/ModalForm";
-
 const Home = () => {
   //Hooks
 
@@ -27,12 +25,6 @@ const Home = () => {
                 BUY TICKETS
               </Button>
             </a>
-          </div>
-        </div>
-
-        <div className="position-relative overflow-hidden p-1 p-md-3 m-md-1 text-center">
-          <div className="col-md-6 p-lg-5 mx-auto my-2 modalContainer">
-            <ModalForm />
           </div>
         </div>
       </main>
