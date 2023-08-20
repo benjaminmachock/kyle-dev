@@ -15,23 +15,23 @@ function KyleCarousel() {
         <Row>
           <Col>
             <Carousel data-bs-theme="dark" fade>
-              <Carousel.Item>
+              <Carousel.Item interval={3000}>
                 <img className="d-block w-100" src={image1} alt="First slide" />
               </Carousel.Item>
-              <Carousel.Item>
+              <Carousel.Item interval={3000}>
                 <img
                   className="d-block w-100"
                   src={image2}
                   alt="Second slide"
                 />
               </Carousel.Item>
-              <Carousel.Item>
+              <Carousel.Item interval={3000}>
                 <img className="d-block w-100" src={image3} alt="Third slide" />
               </Carousel.Item>
-              <Carousel.Item>
+              <Carousel.Item interval={3000}>
                 <img className="d-block w-100" src={image4} alt="Third slide" />
               </Carousel.Item>
-              <Carousel.Item>
+              <Carousel.Item interval={3000}>
                 <img className="d-block w-100" src={image5} alt="Third slide" />
               </Carousel.Item>
             </Carousel>
