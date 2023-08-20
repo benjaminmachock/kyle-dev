@@ -1,10 +1,6 @@
-import Container from "react-bootstrap/esm/Container";
-import Row from "react-bootstrap/esm/Row";
-import Col from "react-bootstrap/esm/Col";
 import KyleCarousel from "../components/Carousel/Carousel";
 import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
-import Kyle3 from "../images/kyle3.jpg";
+
 import ModalForm from "../components/ModalForm/ModalForm";
 
 const Home = () => {
@@ -33,21 +29,6 @@ const Home = () => {
             </a>
           </div>
         </div>
-
-        <Container fluid>
-          <Row>
-            <Col className="text-center">
-              <Image
-                src={Kyle3}
-                style={{
-                  border: "5px solid white",
-                  width: "700px",
-                  height: "1200px",
-                }}
-              />
-            </Col>
-          </Row>
-        </Container>
 
         <div className="position-relative overflow-hidden p-1 p-md-3 m-md-1 text-center">
           <div className="col-md-6 p-lg-5 mx-auto my-2 modalContainer">
