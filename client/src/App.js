@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Schedule from "./components/Schedule/Schedule";
 import Book from "./components/Book/Book";
 import Contact from "./components/Contact/Contact";
-import KyleCarousel from "./components/Carousel/Carousel";
+import KyleCarousel from "./components/KyleCarousel/KyleCarousel";
 import Merch from "./components/Merch/Merch";
 import Footer from "./components/Footer/Footer";
 

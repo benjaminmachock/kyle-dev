@@ -1,10 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
-import KyleCarousel from "../components/Carousel/Carousel";
+import KyleCarousel from "../components/KyleCarousel/KyleCarousel";
 import Button from "react-bootstrap/Button";
-
 import { FaInstagram, FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Home = () => {
