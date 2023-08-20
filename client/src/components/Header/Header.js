@@ -12,7 +12,7 @@ const Header = () => {
       <Navbar
         collapseOnSelect
         expand="lg"
-        style={{ backgroundColor: "#000", height: "100px" }}
+        style={{ backgroundColor: "#000", height: "150px" }}
         className="headerContainer"
       >
         <Container>
