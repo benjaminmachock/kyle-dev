@@ -16,7 +16,7 @@ const Header = () => {
         className="headerContainer"
       >
         <Container>
-          <LinkContainer to="/landing">
+          <LinkContainer to="/">
             <Navbar.Brand>
               <Image
                 src={Logo}
