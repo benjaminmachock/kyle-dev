@@ -3,7 +3,8 @@ import Home from "./pages/Home";
 import Land from "./components/Land/Land";
 import Header from "./components/Header/Header";
 import Schedule from "./components/Schedule/Schedule";
-import Book from "./components/Book/Book";
+import { ModalProvider } from "./components/Book/Book";
+import ModalForm from "./components/ModalForm/ModalForm";
 import Contact from "./components/Contact/Contact";
 import KyleCarousel from "./components/KyleCarousel/KyleCarousel";
 import Merch from "./components/Merch/Merch";
@@ -13,17 +14,19 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/schedule" element={<Schedule />} />
-          <Route path="/merchandise" element={<Merch />} />
-          <Route path="/book" element={<Book />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/meet-kyle" element={<Land />} />
-          <Route path="/carousel" element={<KyleCarousel />} />
-        </Routes>
-        <Footer />
+        <ModalProvider>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/schedule" element={<Schedule />} />
+            <Route path="/merchandise" element={<Merch />} />
+            <Route path="/book" element={<ModalForm />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/meet-kyle" element={<Land />} />
+            <Route path="/carousel" element={<KyleCarousel />} />
+          </Routes>
+          <Footer />
+        </ModalProvider>
       </Router>
     </>
   );

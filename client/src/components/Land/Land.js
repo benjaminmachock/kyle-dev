@@ -4,6 +4,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { FaPaypal, FaSpotify, FaAmazon } from "react-icons/fa";
 import { BiLogoVenmo } from "react-icons/bi";
 import { SiApplemusic } from "react-icons/si";
+import { SocialIcon } from "react-social-icons";
 import YouTube from "react-youtube";
 
 const videos = [
@@ -70,7 +71,7 @@ function Land() {
                 <FaPaypal
                   size={50}
                   style={{
-                    color: "#e3e3e3",
+                    color: "#3b7bbf",
                   }}
                 />
               </a>
@@ -83,7 +84,7 @@ function Land() {
                 <BiLogoVenmo
                   size={50}
                   style={{
-                    color: "#e3e3e3",
+                    color: "#82bce8",
                   }}
                 />
               </a>
@@ -106,7 +107,7 @@ function Land() {
                 <FaSpotify
                   size={50}
                   style={{
-                    color: "#e3e3e3",
+                    color: "#1db954",
                   }}
                 />
               </a>
@@ -119,7 +120,7 @@ function Land() {
                 <FaAmazon
                   size={50}
                   style={{
-                    color: "#e3e3e3",
+                    color: "#FF9900",
                   }}
                 />
               </a>
@@ -132,7 +133,7 @@ function Land() {
                 <SiApplemusic
                   size={50}
                   style={{
-                    color: "#e3e3e3",
+                    color: "#fa57c1",
                   }}
                 />
               </a>
@@ -158,6 +159,42 @@ function Land() {
               </div>
             </Col>
           ))}
+        </Row>
+        <hr className="my-5" style={{ color: "#e3e3e3" }} />
+        <h1 style={{ color: "white", textAlign: "center" }}>SOCIALS</h1>
+        <Row>
+          <Col
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <SocialIcon
+              style={{ margin: ".5rem" }}
+              url="https://instagram.com/kylejennings13"
+              network="instagram"
+              target="_blank"
+            />
+            <SocialIcon
+              style={{ margin: ".5rem" }}
+              url="https://twitter.com/kylejennings13"
+              network="twitter"
+              target="_blank"
+            />
+            <SocialIcon
+              style={{ margin: ".5rem" }}
+              url="https://facebook.com/kylejenningsmusic"
+              network="facebook"
+              target="_blank"
+            />
+            <SocialIcon
+              style={{ margin: ".5rem" }}
+              url="https://youtube.com/kylejenningsmusiconline"
+              network="youtube"
+              target="_blank"
+            />
+          </Col>
         </Row>
       </Container>
     </>

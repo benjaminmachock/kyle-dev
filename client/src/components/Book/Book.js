@@ -1,15 +1,25 @@
-//Imports
+import { createContext, useContext, useState } from "react";
 
-const Book = () => {
-  //Hooks
+const BookContext = createContext();
 
-  //Functions
+export function ModalProvider({ children }) {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
   return (
-    <>
-      <h1 style={{ color: "white" }}>UNDER CONSTRUCTION</h1>
-    </>
+    <BookContext.Provider value={{ showModal, openModal, closeModal }}>
+      {children}
+    </BookContext.Provider>
   );
-};
+}
 
-export default Book;
+export function useModal() {
+  return useContext(BookContext);
+}
