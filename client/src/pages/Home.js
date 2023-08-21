@@ -46,24 +46,28 @@ const Home = () => {
                 style={{ margin: ".5rem" }}
                 url="https://instagram.com/kylejennings13"
                 network="instagram"
+                fgColor="white"
                 target="_blank"
               />
               <SocialIcon
                 style={{ margin: ".5rem" }}
                 url="https://twitter.com/kylejennings13"
                 network="twitter"
+                fgColor="white"
                 target="_blank"
               />
               <SocialIcon
                 style={{ margin: ".5rem" }}
                 url="https://facebook.com/kylejenningsmusic"
                 network="facebook"
+                fgColor="white"
                 target="_blank"
               />
               <SocialIcon
                 style={{ margin: ".5rem" }}
                 url="https://youtube.com/kylejenningsmusiconline"
                 network="youtube"
+                fgColor="white"
                 target="_blank"
               />
             </Col>
