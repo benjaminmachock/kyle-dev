@@ -161,7 +161,7 @@ function Land() {
           ))}
         </Row>
         <hr className="my-5" style={{ color: "#e3e3e3" }} />
-        <h1 style={{ color: "white", textAlign: "center" }}>SOCIALS</h1>
+        <h1 style={{ color: "white", textAlign: "center" }}>SOCIAL</h1>
         <Row>
           <Col
             style={{
@@ -174,24 +174,28 @@ function Land() {
               style={{ margin: ".5rem" }}
               url="https://instagram.com/kylejennings13"
               network="instagram"
+              fgColor="white"
               target="_blank"
             />
             <SocialIcon
               style={{ margin: ".5rem" }}
               url="https://twitter.com/kylejennings13"
               network="twitter"
+              fgColor="white"
               target="_blank"
             />
             <SocialIcon
               style={{ margin: ".5rem" }}
               url="https://facebook.com/kylejenningsmusic"
               network="facebook"
+              fgColor="white"
               target="_blank"
             />
             <SocialIcon
               style={{ margin: ".5rem" }}
               url="https://youtube.com/kylejenningsmusiconline"
               network="youtube"
+              fgColor="white"
               target="_blank"
             />
           </Col>
