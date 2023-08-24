@@ -132,7 +132,11 @@ function ModalForm() {
                 onChange={handleInputChange}
               />
             </Form.Group>
-            <Form.Select className="mb-3" controlId="formBasicVenueType">
+            <Form.Select
+              className="mb-3"
+              name="eventType"
+              controlId="formBasicVenueType"
+            >
               <option>Choose Event Type</option>
               <option value="private">Private Event</option>
               <option value="festival">Festival</option>
@@ -140,10 +144,18 @@ function ModalForm() {
               <option value="corporate">Corporate Event</option>
             </Form.Select>
             <Form.Group className="mb-3" controlId="formBasicVenueName">
-              <Form.Control type="text" placeholder="Event Name (Optional)" />
+              <Form.Control
+                type="text"
+                name="eventName"
+                placeholder="Event Name (Optional)"
+              />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicVenueAttendance">
-              <Form.Control type="number" placeholder="Estimated Attendance" />
+              <Form.Control
+                type="number"
+                name="estimatedAttendance"
+                placeholder="Estimated Attendance"
+              />
             </Form.Group>
             <Button
               type="submit"
