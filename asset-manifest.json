@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/kyle-dev/static/css/main.f4bbab6f.css",
+    "main.js": "/kyle-dev/static/js/main.5154a656.js",
+    "static/media/carousel1.jpg": "/kyle-dev/static/media/carousel1.82dd8ea0ba11733098f3.jpg",
+    "static/media/carousel3.jpg": "/kyle-dev/static/media/carousel3.3cacb12f5bed81029245.jpg",
+    "static/media/kyle5.webp": "/kyle-dev/static/media/kyle5.77369fc911a1e2a1ce44.webp",
+    "static/media/carousel5.png": "/kyle-dev/static/media/carousel5.2133ad0baf671d4748a4.png",
+    "static/media/carousel2.JPG": "/kyle-dev/static/media/carousel2.eec344b4283b8618e602.JPG",
+    "static/media/carousel4.jpg": "/kyle-dev/static/media/carousel4.3489fe080d0e965294d4.jpg",
+    "static/media/kylejennings logo.png": "/kyle-dev/static/media/kylejennings logo.67b65afb34e8bf3fdc43.png",
+    "index.html": "/kyle-dev/index.html",
+    "main.f4bbab6f.css.map": "/kyle-dev/static/css/main.f4bbab6f.css.map",
+    "main.5154a656.js.map": "/kyle-dev/static/js/main.5154a656.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4bbab6f.css",
+    "static/js/main.5154a656.js"
+  ]
+}
