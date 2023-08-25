@@ -5,7 +5,6 @@ import Header from "./components/Header/Header";
 import Schedule from "./components/Schedule/Schedule";
 import { ModalProvider } from "./components/Book/Book";
 import ModalForm from "./components/ModalForm/ModalForm";
-import Contact from "./components/Contact/Contact";
 import KyleCarousel from "./components/KyleCarousel/KyleCarousel";
 import Merch from "./components/Merch/Merch";
 import Footer from "./components/Footer/Footer";
@@ -21,7 +20,6 @@ function App() {
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/merchandise" element={<Merch />} />
             <Route path="/book" element={<ModalForm />} />
-            <Route path="/contact" element={<Contact />} />
             <Route path="/meet-kyle" element={<Land />} />
             <Route path="/carousel" element={<KyleCarousel />} />
           </Routes>

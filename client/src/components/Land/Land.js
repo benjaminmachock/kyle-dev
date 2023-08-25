@@ -42,12 +42,6 @@ function Land() {
             style={{ border: "5px solid white" }}
           />
         </div>
-        <p className="text-center" style={{ color: "#e3e3e3" }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit
-          eu lectus dapibus dignissim. Nulla facilisi. Vestibulum faucibus erat
-          at dapibus gravida. Nullam ac tincidunt urna. Maecenas in neque vel
-          justo rhoncus volutpat vel ut arcu. Duis non dolor libero.
-        </p>
         <hr className="my-5" style={{ color: "#e3e3e3" }} />
         <Row
           className="justify-content-center"
