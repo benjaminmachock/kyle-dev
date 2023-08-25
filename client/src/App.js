@@ -8,6 +8,7 @@ import ModalForm from "./components/ModalForm/ModalForm";
 import KyleCarousel from "./components/KyleCarousel/KyleCarousel";
 import Merch from "./components/Merch/Merch";
 import Footer from "./components/Footer/Footer";
+//test
 
 function App() {
   return (
