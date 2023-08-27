@@ -5,10 +5,11 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="fluid footerStyle text-center fixed-bottom"
+        className="fluid footerStyle text-center "
         style={{
           backgroundColor: "#000",
           color: "#e3e3e3",
+          height: "150px",
         }}
       >
         <p>
