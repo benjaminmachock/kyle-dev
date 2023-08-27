@@ -33,10 +33,6 @@ const Header = () => {
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto ">
-              <LinkContainer style={{ color: "white" }} to="/book">
-                <NavLink onClick={openModal}>Book</NavLink>
-              </LinkContainer>
-
               <LinkContainer style={{ color: "white" }} to="/meet-kyle">
                 <NavLink>Meet Kyle </NavLink>
               </LinkContainer>
