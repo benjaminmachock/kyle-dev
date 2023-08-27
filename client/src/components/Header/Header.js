@@ -12,13 +12,8 @@ const Header = () => {
       <Navbar
         collapseOnSelect
         expand="lg"
-        style={{
-          backgroundColor: "#000",
-          width: "100%",
-          position: "fixed",
-          top: 0,
-        }}
-        className="headerContainer"
+        style={{ backgroundColor: "#000" }}
+        className="headerContainer fixed-top"
       >
         <Container>
           <LinkContainer to="/">
