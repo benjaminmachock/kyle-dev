@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <KyleCarousel />
-      <main>
+      <main style={{ height: "600px" }}>
         <div className="position-relative overflow-hidden p-1 p-md-3 m-md-1 text-center">
           <div className="col-md-6 p-lg-5 mx-auto">
             <a

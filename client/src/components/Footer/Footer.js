@@ -5,18 +5,14 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="fluid footerStyle text-center"
+        className="fluid footerStyle text-center fixed-bottom"
         style={{
           backgroundColor: "#000",
           color: "#e3e3e3",
-          height: "100px",
-          width: "100%",
-          position: "fixed",
-          bottom: 0,
         }}
       >
         <p>
-          &copy; 2023
+          &copy; <h3 style={{ display: "inline" }}>2023</h3>
           <br />
           <Image
             src={Logo}
