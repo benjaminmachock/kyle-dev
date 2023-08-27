@@ -5,10 +5,8 @@ import { LinkContainer } from "react-router-bootstrap";
 import NavLink from "react-bootstrap/esm/NavLink";
 import Logo from "../../images/kylejennings logo.png";
 import Image from "react-bootstrap/Image";
-import { useModal } from "../Book/Book";
 
 const Header = () => {
-  const { openModal } = useModal();
   return (
     <>
       <Navbar
