@@ -13,7 +13,7 @@ const Header = () => {
         collapseOnSelect
         expand="lg"
         style={{ backgroundColor: "#000" }}
-        className="headerContainer fixed-top"
+        className="headerContainer "
       >
         <Container>
           <LinkContainer to="/">
