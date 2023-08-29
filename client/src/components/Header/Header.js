@@ -31,7 +31,7 @@ const Header = () => {
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto ">
-              <LinkContainer style={{ color: "white" }} to="/meet-kyle">
+              <LinkContainer style={{ color: "white" }} to="/land">
                 <NavLink>Meet Kyle </NavLink>
               </LinkContainer>
             </Nav>
