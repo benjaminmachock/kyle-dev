@@ -72,7 +72,6 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-        <hr style={{ color: "white" }} />
       </main>
     </>
   );

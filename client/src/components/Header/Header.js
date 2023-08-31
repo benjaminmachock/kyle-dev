@@ -16,7 +16,10 @@ const Header = () => {
         className="headerContainer "
       >
         <Container>
-          <LinkContainer to="/">
+          <LinkContainer
+            to="/"
+            className="container d-flex justify-content-between"
+          >
             <Navbar.Brand>
               <Image
                 src={Logo}
@@ -30,7 +33,7 @@ const Header = () => {
             aria-controls="responsive-navbar-nav"
           />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto ">
+            <Nav className="me-auto">
               <LinkContainer style={{ color: "white" }} to="/land">
                 <NavLink>Meet Kyle </NavLink>
               </LinkContainer>
