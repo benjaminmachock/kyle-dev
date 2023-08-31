@@ -26,7 +26,7 @@ const Home = () => {
                 className="animatedBorder"
                 style={{ fontSize: 40, color: "#e3e3e3" }}
               >
-                BUY TICKETS TODAY
+                BUY TICKETS
               </Button>
             </a>
           </div>
