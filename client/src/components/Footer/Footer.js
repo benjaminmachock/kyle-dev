@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer
+        fixed="bottom"
         className="fluid footerStyle text-center "
         style={{
           backgroundColor: "#000",
