@@ -15,38 +15,33 @@ const Header = () => {
         style={{ backgroundColor: "#000" }}
         className="headerContainer"
       >
-        <Container>
-          <LinkContainer
-            to="/"
-            className="container d-flex justify-content-around"
-          >
-            <Navbar.Brand>
-              <Image
-                src={Logo}
-                className="d-inline-block align-top"
-                alt="Kyle Jennings"
-              />
-            </Navbar.Brand>
-          </LinkContainer>
-          <Navbar.Toggle
-            style={{ background: "white" }}
-            aria-controls="responsive-navbar-nav"
-          />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <LinkContainer style={{ color: "white" }} to="/book">
-                <NavLink>Book</NavLink>
-              </LinkContainer>
-            </Nav>
-          </Navbar.Collapse>
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <LinkContainer style={{ color: "white" }} to="/land">
-                <NavLink>About</NavLink>
-              </LinkContainer>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
+        <LinkContainer to="/" className="container d-flex">
+          <Navbar.Brand>
+            <Image
+              src={Logo}
+              className="d-inline-block align-top"
+              alt="Kyle Jennings"
+            />
+          </Navbar.Brand>
+        </LinkContainer>
+        <Navbar.Toggle
+          style={{ background: "white" }}
+          aria-controls="responsive-navbar-nav"
+        />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <LinkContainer style={{ color: "white" }} to="/book">
+              <NavLink>Book</NavLink>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <LinkContainer style={{ color: "white" }} to="/land">
+              <NavLink>About</NavLink>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     </>
   );
