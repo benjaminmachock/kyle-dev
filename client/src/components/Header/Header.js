@@ -34,6 +34,13 @@ const Header = () => {
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
+              <LinkContainer style={{ color: "white" }} to="/book">
+                <NavLink>Book</NavLink>
+              </LinkContainer>
+            </Nav>
+          </Navbar.Collapse>
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
               <LinkContainer style={{ color: "white" }} to="/land">
                 <NavLink>About</NavLink>
               </LinkContainer>

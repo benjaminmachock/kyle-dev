@@ -1,25 +1,41 @@
-import { createContext, useContext, useState } from "react";
+// import { createContext, useContext, useState } from "react";
 
-const BookContext = createContext();
+// const BookContext = createContext();
 
-export function ModalProvider({ children }) {
-  const [showModal, setShowModal] = useState(false);
+// export function ModalProvider({ children }) {
+//   const [showModal, setShowModal] = useState(false);
 
-  const openModal = () => {
-    setShowModal(true);
-  };
+//   const openModal = () => {
+//     setShowModal(true);
+//   };
 
-  const closeModal = () => {
-    setShowModal(false);
-  };
+//   const closeModal = () => {
+//     setShowModal(false);
+//   };
+
+//   return (
+//     <BookContext.Provider value={{ showModal, openModal, closeModal }}>
+//       {children}
+//     </BookContext.Provider>
+//   );
+// }
+
+// export function useModal() {
+//   return useContext(BookContext);
+// }
+
+//Imports
+
+const Book = () => {
+  //Hooks
+
+  //Functions
 
   return (
-    <BookContext.Provider value={{ showModal, openModal, closeModal }}>
-      {children}
-    </BookContext.Provider>
+    <>
+      <h1 style={{ color: "white" }}>BOOKING PAGE</h1>
+    </>
   );
-}
+};
 
-export function useModal() {
-  return useContext(BookContext);
-}
+export default Book;
