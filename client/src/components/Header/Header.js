@@ -13,12 +13,12 @@ const Header = () => {
         collapseOnSelect
         expand="lg"
         style={{ backgroundColor: "#000" }}
-        className="headerContainer "
+        className="headerContainer"
       >
         <Container>
           <LinkContainer
             to="/"
-            className="container d-flex justify-content-between"
+            className="container d-flex justify-content-around"
           >
             <Navbar.Brand>
               <Image
@@ -35,7 +35,7 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <LinkContainer style={{ color: "white" }} to="/land">
-                <NavLink>Meet Kyle </NavLink>
+                <NavLink>About</NavLink>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>
