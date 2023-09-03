@@ -14,7 +14,7 @@ function KyleCarousel() {
       <Container fluid>
         <Row>
           <Col>
-            <Carousel data-bs-theme="dark" fade>
+            <Carousel fade>
               <Carousel.Item interval={3000}>
                 <img className="d-block w-100" src={image1} alt="First slide" />
               </Carousel.Item>

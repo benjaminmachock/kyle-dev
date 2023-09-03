@@ -7,16 +7,6 @@ body {
   background-color: #000;
 }
 
-/* code {
-  font-family: "Rye", cursive;
-} */
-
-/* #video {
-  position: fixed;
-  z-index: -1;
-  width: 100%;
-} */
-
 :root {
   --d: 2500ms;
   --angle: 90deg;
@@ -156,8 +146,8 @@ body {
 }
 
 /* removes carousel button icons and indicators */
-.carousel-control-prev-icon,
-.carousel-control-next,
+/* .carousel-control-prev-icon,
+.carousel-control-next, */
 .carousel-indicators {
   display: none;
 }
