@@ -1,5 +1,5 @@
 import React from "react";
-import Kyle5 from "../../images/kyle5.webp";
+import Kyle5 from "../../images/kyle5_compressed_resized.webp";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { FaPaypal, FaSpotify, FaAmazon } from "react-icons/fa";
 import { BiLogoVenmo } from "react-icons/bi";
