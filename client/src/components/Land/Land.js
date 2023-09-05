@@ -42,6 +42,25 @@ function Land() {
             style={{ border: "5px solid white" }}
           />
         </div>
+        <Container>
+          <p style={{ color: "white" }}>
+            American country singer/songwriter Kyle Jennings has built his brand
+            around authentic storytelling and charismatic engaging live
+            performances. Originally from southwest Michigan, Jennings first
+            love was ice hockey. After a brief competitive career he
+            transitioned his passion for hockey into music and relocated to
+            Nashville to focus on the development of his writing and
+            performance. Primarily a country traditionalist, Jennings music is
+            actually quite diverse. A rootsy foundation of edge-infused
+            traditional country mixed with blues, folk, and rock influences have
+            provided him a broad spectrum musical platform and his small town
+            stories and affection for the American way of life are signature in
+            his work. Jennings has released 4 independent records on his own
+            label, Dark Horse Records, and currently performs solo acoustic and
+            full band shows throughout the U.S.
+          </p>
+        </Container>
+
         <hr className="my-5" style={{ color: "#e3e3e3" }} />
         <Row
           className="justify-content-center"
