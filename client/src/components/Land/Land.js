@@ -45,7 +45,7 @@ function Land() {
         <Container>
           <p
             style={{
-              backgroundColor: "white",
+              backgroundColor: "#e0e0e0",
               border: "5px solid black",
               borderRadius: "1rem",
               padding: "2rem",
