@@ -43,7 +43,14 @@ function Land() {
           />
         </div>
         <Container>
-          <p style={{ color: "white" }}>
+          <p
+            style={{
+              backgroundColor: "white",
+              border: "5px solid black",
+              borderRadius: "1rem",
+              padding: "2rem",
+            }}
+          >
             American country singer/songwriter Kyle Jennings has built his brand
             around authentic storytelling and charismatic engaging live
             performances. Originally from southwest Michigan, Jennings first
