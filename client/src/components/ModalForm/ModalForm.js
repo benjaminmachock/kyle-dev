@@ -61,7 +61,7 @@ function ModalForm() {
         size="lg"
         style={{ fontSize: 40, color: "#e3e3e3" }}
       >
-        BOOK KYLE
+        BOOK
       </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
