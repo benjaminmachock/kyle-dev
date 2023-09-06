@@ -71,7 +71,10 @@ function Land() {
           </Col>
           <Col md="12" lg="6">
             <Table
-              style={{ border: "10px solid black", fontSize: "15px" }}
+              style={{
+                border: "10px solid black",
+                fontSize: "15px",
+              }}
               striped
               bordered
               hover
