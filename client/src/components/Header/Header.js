@@ -34,7 +34,7 @@ const Header = () => {
         style={{ backgroundColor: "#000" }}
         className="headerContainer"
       >
-        <LinkContainer to="/" className="container d-flex">
+        <LinkContainer to="/">
           <Navbar.Brand>
             <Image
               src={Logo}
