@@ -5,6 +5,8 @@ import { FaPaypal, FaSpotify, FaAmazon } from "react-icons/fa";
 import { BiLogoVenmo } from "react-icons/bi";
 import { SiApplemusic } from "react-icons/si";
 import { SocialIcon } from "react-social-icons";
+import Table from "react-bootstrap/Table";
+import Widget from "../Widget/Widget";
 import YouTube from "react-youtube";
 
 const videos = [
@@ -56,15 +58,30 @@ function Land() {
   return (
     <>
       <Container>
-        <div className="my-3 py-3 booking-image-container">
-          <Image
-            src={Kyle5}
-            fluid
-            className="img"
-            style={{ border: "5px solid white" }}
-          />
-        </div>
-
+        <Row>
+          <Col col-lg-6>
+            <div className="my-3 py-3 booking-image-container">
+              <Image
+                src={Kyle5}
+                fluid
+                className="img"
+                style={{ border: "5px solid white" }}
+              />
+            </div>
+          </Col>
+          <Col col-lg-6>
+            <Table
+              style={{ border: "10px solid black", fontSize: "15px" }}
+              striped
+              bordered
+              hover
+            >
+              <tbody>
+                <Widget />
+              </tbody>
+            </Table>
+          </Col>
+        </Row>
         <p
           style={{
             fontSize: "2rem",
@@ -77,7 +94,6 @@ function Land() {
         >
           {bioTexts[currentIndex]}
         </p>
-
         <hr className="my-5" style={{ color: "#e3e3e3" }} />
         <Row
           className="justify-content-center"
