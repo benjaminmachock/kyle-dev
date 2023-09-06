@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Land from "./components/Land/Land";
 import Header1 from "./components/Header/Header1";
-import Book from "./components/Book/Book";
+
 import Schedule from "./components/Schedule/Schedule";
 // import { ModalProvider } from "./components/Book/Book";
 import KyleCarousel from "./components/KyleCarousel/KyleCarousel";
@@ -21,7 +21,6 @@ function App() {
           <Route path="/merchandise" element={<Merch />} />
           <Route path="/land" element={<Land />} />
           <Route path="/carousel" element={<KyleCarousel />} />
-          <Route path="/book" element={<Book />} />
         </Routes>
         <Footer />
       </Router>
