@@ -95,16 +95,6 @@ body {
   z-index: 100;
 } */
 
-.booking-image-container {
-  margin: 0.5rem 0;
-  width: 100%;
-  height: 75vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .booking-image-container .img {
   object-fit: contain;
   max-width: 100%;

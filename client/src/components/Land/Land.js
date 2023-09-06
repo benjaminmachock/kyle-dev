@@ -59,8 +59,8 @@ function Land() {
     <>
       <Container fluid>
         <Row>
-          <Col sm="12" lg="6">
-            <div className="my-3 py-3 booking-image-container">
+          <Col md="12" lg="6">
+            <div className="my-3 py-3 ">
               <Image
                 src={Kyle5}
                 fluid
@@ -69,7 +69,7 @@ function Land() {
               />
             </div>
           </Col>
-          <Col sm="12" lg="6">
+          <Col md="12" lg="6">
             <Table
               style={{ border: "10px solid black", fontSize: "15px" }}
               striped
