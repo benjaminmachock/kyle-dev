@@ -56,14 +56,9 @@ function Header1() {
           )}
         </Navbar.Toggle>{" "}
         <Navbar.Collapse className="justify-content-end">
-          <LinkContainer
-            style={{ color: "white", paddingLeft: "1rem" }}
-            to="/book"
-          >
-            <NavLink>
-              <ModalForm />
-            </NavLink>
-          </LinkContainer>
+          <NavLink>
+            <ModalForm />
+          </NavLink>
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end">
           <LinkContainer
