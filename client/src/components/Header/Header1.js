@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ModalForm from "../ModalForm/ModalForm";
 import { LinkContainer } from "react-router-bootstrap";
 import NavLink from "react-bootstrap/esm/NavLink";
 import Container from "react-bootstrap/Container";
@@ -59,7 +60,9 @@ function Header1() {
             style={{ color: "white", paddingLeft: "1rem" }}
             to="/book"
           >
-            <NavLink>Book</NavLink>
+            <NavLink>
+              <ModalForm />
+            </NavLink>
           </LinkContainer>
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end">
