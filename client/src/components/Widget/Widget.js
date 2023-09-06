@@ -1,6 +1,5 @@
 //Imports
 import { useState, useEffect } from "react";
-import Table from "react-bootstrap/Table";
 import axios from "axios";
 import dayJs from "dayjs";
 
