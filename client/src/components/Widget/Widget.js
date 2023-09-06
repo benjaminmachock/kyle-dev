@@ -11,15 +11,10 @@ const Widget = () => {
     handleTourDates();
   }, []);
 
-  //notify me button
-  //https://www.bandsintown.com/e/1019985520?app_id=yOUrSuP3r3ven7aPp-id&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event&trigger=notify_me
-
   const handleTourDates = async () => {
     let data = await axios.get(
       "https://rest.bandsintown.com/artists/kylejennings/events/?app_id=1bb36b4d0a0995781376ad16394a4fc7"
     );
-
-    console.log(data.data);
 
     setTourDates(data.data);
   };
