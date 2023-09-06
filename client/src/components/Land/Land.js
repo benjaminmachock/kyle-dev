@@ -31,9 +31,9 @@ const videos = [
 ];
 
 const bioTexts = [
-  "American country singer/songwriter Kyle Jennings’ has built his brand around authentic storytelling and charismatic engaging live performances. Originally from southwest Michigan, Jennings’ first love was ice hockey. After a brief competitive career he transitioned his passion for hockey into music and relocated to Nashville to focus on the development of his writing and performance . . .",
-  "Primarily a country traditionalist, Jennings’ music is actually quite diverse. A rootsy foundation of edge-infused traditional country music mixed with blues, folk, and rock influences have provided him a broad spectrum musical platform and his small town stories and affection for the American way of life are signature of his work . . .",
-  "Jennings has relased 4 independent records on his own lavel, Dark Horse Records, and currently performs solo acoustic and full band shows throughout the U.S.",
+  "American country singer/songwriter Kyle Jennings’ has built his brand around authentic storytelling and charismatic, engaging live performances. Originally from southwest Michigan, Jennings’ first love was ice hockey. After a brief competitive career, he transitioned his passion for hockey into music and relocated to Nashville to focus on the development of his writing and performance . . .",
+  "Primarily a country traditionalist, Jennings’ music is actually quite diverse. A rootsy foundation of edge-infused traditional country music, mixed with blues, folk, and rock influences, have provided him a broad-spectrum musical platform. His small-town stories and affection for the American way of life are a signature of his work . . .",
+  "Jennings has relased 4 independent records on his own label, Dark Horse Records, and currently performs solo acoustic and full band shows throughout the U.S.",
 ];
 
 function Land() {
