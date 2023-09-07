@@ -35,10 +35,10 @@ function ModalForm() {
 
     emailjs
       .sendForm(
-        "service_rzlyl75",
-        "template_w8y1959",
+        "service_p43b90l",
+        "template_q9e98yl",
         formRef.current,
-        "LafxfeK-4lofldlZe"
+        "tGy6qzgS-hxxlQet-"
       )
       .then((response) => {
         console.log("Email sent successfully!", response);
