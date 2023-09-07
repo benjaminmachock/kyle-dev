@@ -1,6 +1,6 @@
 import React from "react";
 import Kyle5 from "../../images/kyle5_compressed_resized.webp";
-import { Container, Row, Col, Image, Accordion } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { FaPaypal, FaSpotify, FaAmazon } from "react-icons/fa";
 import { BiLogoVenmo } from "react-icons/bi";
 import { SiApplemusic } from "react-icons/si";
@@ -30,11 +30,6 @@ const videos = [
     title: "They Don’t Make Love Like That No More",
     videoId: "jJuX7IwgDYM",
   },
-];
-
-const bioTexts = [
-  "American country singer/songwriter Kyle Jennings’ has built his brand around authentic storytelling and charismatic, engaging live performances. Originally from southwest Michigan, Jennings’ first love was ice hockey. After a brief competitive career, he transitioned his passion for hockey into music and relocated to Nashville to focus on the development of his writing and performance.",
-  "Primarily a country traditionalist, Jennings’ music is actually quite diverse. A rootsy foundation of edge-infused traditional country music, mixed with blues, folk, and rock influences, have provided him a broad-spectrum musical platform. His small-town stories and affection for the American way of life are a signature of his work. Jennings has relased 4 independent records on his own label, Dark Horse Records, and currently performs solo acoustic and full band shows throughout the U.S.",
 ];
 
 function Land() {
@@ -76,7 +71,7 @@ function Land() {
         </Row>
         <p
           style={{
-            fontSize: "1.5rem",
+            fontSize: "1.25rem",
             textAlign: "center",
             backgroundColor: "#e0e0e0",
             border: "2px solid black",
@@ -85,17 +80,20 @@ function Land() {
             padding: "1rem",
           }}
         >
-          {bioTexts[0]}
-          <Accordion style={{ transform: "scaleY(-1)", marginBottom: "10px" }}>
-            <Accordion.Item eventKey="0" style={{ backgroundColor: "#e0e0e0" }}>
-              <Accordion.Header>. . . </Accordion.Header>
-              <Accordion.Body
-                style={{ backgroundColor: "#e0e0e0", transform: "scaleY(-1)" }}
-              >
-                {bioTexts[1]}
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
+          American country singer/songwriter Kyle Jennings’ has built his brand
+          around authentic storytelling and charismatic, engaging live
+          performances. Originally from southwest Michigan, Jennings’ first love
+          was ice hockey. After a brief competitive career, he transitioned his
+          passion for hockey into music and relocated to Nashville to focus on
+          the development of his writing and performance.", "Primarily a country
+          traditionalist, Jennings’ music is actually quite diverse. A rootsy
+          foundation of edge-infused traditional country music, mixed with
+          blues, folk, and rock influences, have provided him a broad-spectrum
+          musical platform. His small-town stories and affection for the
+          American way of life are a signature of his work. Jennings has relased
+          4 independent records on his own label, Dark Horse Records, and
+          currently performs solo acoustic and full band shows throughout the
+          U.S.
         </p>
         <hr className="my-5" style={{ color: "#e3e3e3" }} />
         <Row
