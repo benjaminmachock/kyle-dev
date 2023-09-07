@@ -70,19 +70,25 @@ function Land() {
             </div>
           </Col>
           <Col md="12" lg="6">
-            <Table
+            <h1 className="text-center m-3" style={{ color: "#fff" }}>
+              Upcoming Shows!
+            </h1>
+            <div
               style={{
                 border: "10px solid black",
+                backgroundColor: "#e0e0e0",
+                borderRadius: "10px",
                 fontSize: "15px",
+                height: "50vh",
+                overflow: "auto",
               }}
-              striped
-              bordered
-              hover
             >
-              <tbody>
-                <Widget />
-              </tbody>
-            </Table>
+              <Table striped bordered hover>
+                <tbody>
+                  <Widget />
+                </tbody>
+              </Table>
+            </div>
           </Col>
         </Row>
         <p
@@ -92,6 +98,7 @@ function Land() {
             backgroundColor: "#e0e0e0",
             border: "2px solid black",
             borderRadius: "1rem",
+            marginTop: "1rem",
             padding: "1rem",
           }}
         >
@@ -216,6 +223,7 @@ function Land() {
             style={{
               display: "flex",
               justifyContent: "center",
+              marginBottom: "2rem",
             }}
           >
             <SocialIcon

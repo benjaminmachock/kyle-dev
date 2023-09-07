@@ -55,13 +55,17 @@ function ModalForm() {
   return (
     <>
       <Button
-        className="animatedBorder"
         variant="dark"
         onClick={handleShow}
         size="lg"
-        style={{ fontSize: 40, color: "#e3e3e3" }}
+        style={{
+          fontSize: 40,
+          color: "#fff",
+          backgroundColor: "#000",
+          border: "none",
+        }}
       >
-        BOOK
+        Book
       </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>

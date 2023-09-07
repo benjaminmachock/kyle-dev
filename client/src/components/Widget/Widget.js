@@ -57,7 +57,7 @@ const Widget = () => {
           );
         })
       ) : (
-        <h1>No Tour Dates At This TIme</h1>
+        <h1>No Tour Dates At This Time</h1>
       )}
     </>
   );

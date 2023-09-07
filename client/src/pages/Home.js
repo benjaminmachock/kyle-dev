@@ -39,6 +39,7 @@ const Home = () => {
               style={{
                 display: "flex",
                 justifyContent: "center",
+                marginBottom: "2rem",
               }}
             >
               <SocialIcon
