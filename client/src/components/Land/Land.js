@@ -49,7 +49,7 @@ function Land() {
           </Col>
           <Col md="12" lg="6">
             <h1 className="text-center m-3" style={{ color: "#fff" }}>
-              Upcoming Shows!
+              Upcoming Shows
             </h1>
             <div
               style={{
@@ -107,7 +107,7 @@ function Land() {
           }}
         >
           <Col md={12} className="mb-4">
-            <h1 className="text-center m-5">Virtual Tip Jar!</h1>
+            <h1 className="text-center m-5">Virtual Tip Jar</h1>
             <div className="text-center">
               <a
                 href="https://www.paypal.com/paypalme/kylejenningsmusic"
@@ -142,7 +142,7 @@ function Land() {
         <Row className="justify-content-center">
           <Col md={12} className="mb-4">
             <h1 className="text-center m-5" style={{ color: "#e3e3e3" }}>
-              Stream My Music!{" "}
+              Stream My Music
             </h1>
             <div className="text-center">
               <a
