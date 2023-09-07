@@ -1,5 +1,5 @@
 import Image from "react-bootstrap/Image";
-import Logo from "../../images/kj_symbol.png";
+import Logo from "../../images/kylejennings logo.png";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         style={{
           backgroundColor: "#000",
           color: "#e3e3e3",
-          height: "150px",
+          height: "200px",
         }}
       >
         <p>
@@ -18,7 +18,6 @@ const Footer = () => {
           <br />
           <Image
             src={Logo}
-            style={{ width: "100px", height: "100px;" }}
             className="d-inline-block align-top"
             alt="Kyle Jennings"
           />
