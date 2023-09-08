@@ -117,7 +117,7 @@ const ModalForm1 = () => {
                   className="mb-3"
                   controlId="formBasicDate.ControlDate1"
                 >
-                  <Form.Label style={{ fontSize: "12px" }}>
+                  <Form.Label style={{ fontSize: "15px" }}>
                     Please Select a Date
                   </Form.Label>
                   <Form.Control
@@ -130,7 +130,7 @@ const ModalForm1 = () => {
                   className="mb-3"
                   controlId="formBasicTime.ControlTimearea1"
                 >
-                  <Form.Label style={{ fontSize: "12px" }}>
+                  <Form.Label style={{ fontSize: "15px" }}>
                     Please Select a Time
                   </Form.Label>
                   <Form.Control
