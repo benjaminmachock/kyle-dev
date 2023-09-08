@@ -8,6 +8,7 @@ import { SocialIcon } from "react-social-icons";
 import Table from "react-bootstrap/Table";
 import Widget from "../Widget/Widget";
 import YouTube from "react-youtube";
+import ModalForm from "../ModalForm/ModalForm";
 
 const videos = [
   {
@@ -95,6 +96,10 @@ function Land() {
           currently performs solo acoustic and full band shows throughout the
           U.S.
         </p>
+        <hr className="my-5" style={{ color: "#e3e3e3" }} />
+        <div style={{ textAlign: "center" }}>
+          <ModalForm />
+        </div>
         <hr className="my-5" style={{ color: "#e3e3e3" }} />
         <Row
           className="justify-content-center"
