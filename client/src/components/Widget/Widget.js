@@ -26,7 +26,7 @@ const Widget = () => {
       {tourDates ? (
         tourDates.map((date) => {
           return (
-            <tr>
+            <tr key={date.id}>
               <td>
                 {dayJs(date.datetime).format("MMM[.] D[,] YYYY")} @
                 {dayJs(date.starts_at).format("h:mm A")}

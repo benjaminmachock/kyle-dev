@@ -74,6 +74,10 @@ body {
   margin: 0 2rem;
 }
 
+.datepicker {
+  z-index: 3000 !important;
+}
+
 /* @keyframes slideIn {
   from {
     transform: translateX(-100%);

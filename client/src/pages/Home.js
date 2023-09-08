@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import KyleCarousel from "../components/KyleCarousel/KyleCarousel";
 import Button from "react-bootstrap/Button";
 import { SocialIcon } from "react-social-icons";
+import TestInput from "../components/ModalForm1/ModalForm1";
 
 const Home = () => {
   //Hooks
@@ -16,19 +17,7 @@ const Home = () => {
       <main>
         <div className="position-relative overflow-hidden p-1 p-md-3 m-md-1 text-center">
           <div className="col-md-6 p-lg-5 mx-auto">
-            <a
-              href="https://www.ticketmaster.com/event/08005EF8E7E0386E?fbclid=IwAR0D3NnRy73sVkRbNLYPBMB1UO9zVGwcYzAa8dGUTfk9vYqiJujrs1uuEbY"
-              target="no_blank"
-            >
-              <Button
-                variant="dark"
-                size="lg"
-                className="animatedBorder"
-                style={{ fontSize: 40, color: "#e3e3e3" }}
-              >
-                BUY TICKETS
-              </Button>
-            </a>
+            <TestInput />
           </div>
         </div>
         <hr className="my-5" style={{ color: "#e3e3e3" }} />

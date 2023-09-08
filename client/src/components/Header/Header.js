@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ModalForm from "../ModalForm/ModalForm";
 import { LinkContainer } from "react-router-bootstrap";
 import NavLink from "react-bootstrap/esm/NavLink";
 import Container from "react-bootstrap/Container";
@@ -8,7 +7,7 @@ import Image from "react-bootstrap/Image";
 import Logo from "../../images/kylejennings logo.png";
 import { TbBaselineDensityMedium, TbX } from "react-icons/tb";
 
-function Header1() {
+function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -54,12 +53,8 @@ function Header1() {
           ) : (
             <TbBaselineDensityMedium color="white" size={50} />
           )}
-        </Navbar.Toggle>{" "}
-        <Navbar.Collapse className="justify-content-end">
-          <NavLink>
-            <ModalForm />
-          </NavLink>
-        </Navbar.Collapse>
+        </Navbar.Toggle>
+
         <Navbar.Collapse className="justify-content-end">
           <LinkContainer
             style={{ color: "white", paddingLeft: "1rem" }}
@@ -73,4 +68,4 @@ function Header1() {
   );
 }
 
-export default Header1;
+export default Header;

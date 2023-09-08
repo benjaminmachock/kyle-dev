@@ -7,8 +7,6 @@ import emailjs from "emailjs-com";
 function ModalForm() {
   const [show, setShow] = useState(false);
 
-  //JORDAN WILL WORK ON EMAIL.JS integration - test email submission to both of our emails.  devsdeviant@gmail.com
-
   //formstate
   const [contactForm, setContactForm] = useState({
     name: "",
@@ -26,18 +24,12 @@ function ModalForm() {
   const formRef = useRef();
   //create a handleInputChange function - updating state as the user types in a field we tie this function to an onChange event, in this function capture from e.target the value of the correct input the user is typing in and then update state
   const handleInputChange = (e) => {
-    console.log(e);
     const { name, value } = e.target;
     setContactForm({ ...contactForm, [name]: value });
   };
   //create a handleSubmit function - when user submits, make email.js api call to submit info, and then close the modal
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    console.log("i am clicked!!");
-
-    console.log(e);
-
     emailjs
       .sendForm(
         "service_453ue7f",
@@ -108,6 +100,7 @@ function ModalForm() {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicDate">
               <Form.Control
+                className="datepicker"
                 type="date"
                 placeholder="Date"
                 value={contactForm.requestedDate}

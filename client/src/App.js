@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
+import Header from "./components/Header/Header";
 import Land from "./components/Land/Land";
-import Header1 from "./components/Header/Header1";
 import Widget from "./components/Widget/Widget";
 import Schedule from "./components/Schedule/Schedule";
 import KyleCarousel from "./components/KyleCarousel/KyleCarousel";
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Router>
-        <Header1 />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/schedule" element={<Schedule />} />
