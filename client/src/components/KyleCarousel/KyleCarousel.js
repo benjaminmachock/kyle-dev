@@ -5,8 +5,8 @@ import Carousel from "react-bootstrap/Carousel";
 import image1 from "../../images/carousel1_resized_compressed.webp";
 import image2 from "../../images/carousel2_resized_compressed.webp";
 import image3 from "../../images/carousel3_compressed_resized.webp";
-import image4 from "../../images/carousel4_compressed_resized.webp";
-import image5 from "../../images/carousel5_compressed_resized.webp";
+import image4 from "../../images/carousel4 (2) (1).webp";
+import image5 from "../../images/carousel5 (3) (1).webp";
 
 function KyleCarousel() {
   return (
