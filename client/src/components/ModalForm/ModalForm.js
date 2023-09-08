@@ -115,6 +115,34 @@ const ModalForm1 = () => {
                 </Form.Group>
                 <Form.Group
                   className="mb-3"
+                  controlId="formBasicDate.ControlDate1"
+                >
+                  <Form.Label style={{ fontSize: "15px" }}>
+                    Please Select a Date
+                  </Form.Label>
+                  <Form.Control
+                    type="date"
+                    name="requestedDate"
+                    onChange={handleInputChange}
+                  />
+                </Form.Group>
+                <Form.Group
+                  className="mb-3"
+                  controlId="formBasicTime.ControlTimearea1"
+                >
+                  <Form.Label style={{ fontSize: "15px" }}>
+                    Please Select a Time
+                  </Form.Label>
+                  <Form.Control
+                    type="time"
+                    placeholder="Time"
+                    value={contactForm.requestedTime}
+                    name="requestedTime"
+                    onChange={handleInputChange}
+                  />
+                </Form.Group>
+                <Form.Group
+                  className="mb-3"
                   controlId="formBasicVenueName.ControlVenueName1"
                 >
                   <Form.Control
@@ -153,6 +181,7 @@ const ModalForm1 = () => {
                     <option value="corporate">Corporate Event</option>
                   </Form.Control>
                 </Form.Group>
+
                 <Form.Group
                   className="mb-3"
                   controlId="formBasicEventName.ControlEventName1"
@@ -174,34 +203,6 @@ const ModalForm1 = () => {
                     placeholder="Estimated Attendance"
                     value={contactForm.estimatedAttendance}
                     name="estimatedAttendance"
-                    onChange={handleInputChange}
-                  />
-                </Form.Group>
-                <Form.Group
-                  className="mb-3"
-                  controlId="formBasicDate.ControlDate1"
-                >
-                  <Form.Label style={{ fontSize: "15px" }}>
-                    Please Select a Date
-                  </Form.Label>
-                  <Form.Control
-                    type="date"
-                    name="requestedDate"
-                    onChange={handleInputChange}
-                  />
-                </Form.Group>
-                <Form.Group
-                  className="mb-3"
-                  controlId="formBasicTime.ControlTimearea1"
-                >
-                  <Form.Label style={{ fontSize: "15px" }}>
-                    Please Select a Time
-                  </Form.Label>
-                  <Form.Control
-                    type="time"
-                    placeholder="Time"
-                    value={contactForm.requestedTime}
-                    name="requestedTime"
                     onChange={handleInputChange}
                   />
                 </Form.Group>
