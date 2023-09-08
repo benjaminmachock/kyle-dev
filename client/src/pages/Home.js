@@ -2,22 +2,17 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import KyleCarousel from "../components/KyleCarousel/KyleCarousel";
-import Button from "react-bootstrap/Button";
 import { SocialIcon } from "react-social-icons";
-import ModalForm1 from "../components/ModalForm1/ModalForm1";
+import ModalForm from "../components/ModalForm/ModalForm";
 
 const Home = () => {
-  //Hooks
-
-  //Functions
-
   return (
     <>
       <KyleCarousel />
       <main>
         <div className="position-relative overflow-hidden p-1 p-md-3 m-md-1 text-center">
           <div className="col-md-6 p-lg-5 mx-auto">
-            <ModalForm1 />
+            <ModalForm />
           </div>
         </div>
         <hr className="my-5" style={{ color: "#e3e3e3" }} />

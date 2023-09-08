@@ -1,10 +1,8 @@
-//Imports
 import { useState, useEffect } from "react";
 import axios from "axios";
 import dayJs from "dayjs";
 
 const Widget = () => {
-  //Hooks
   const [tourDates, setTourDates] = useState([]);
 
   useEffect(() => {
@@ -18,8 +16,6 @@ const Widget = () => {
 
     setTourDates(data.data);
   };
-
-  //Functions
 
   return (
     <>
