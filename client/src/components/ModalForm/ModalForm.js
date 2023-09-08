@@ -34,12 +34,7 @@ function ModalForm() {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_p43b90l",
-        "template_q9e98yl",
-        formRef.current,
-        "tGy6qzgS-hxxlQet-"
-      )
+      .sendForm("service_453ue7f", formRef.current)
       .then((response) => {
         console.log("Email sent successfully!", response);
         handleClose();
