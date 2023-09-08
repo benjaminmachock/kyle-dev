@@ -26,6 +26,7 @@ function ModalForm() {
   const formRef = useRef();
   //create a handleInputChange function - updating state as the user types in a field we tie this function to an onChange event, in this function capture from e.target the value of the correct input the user is typing in and then update state
   const handleInputChange = (e) => {
+    console.log(e);
     const { name, value } = e.target;
     setContactForm({ ...contactForm, [name]: value });
   };
@@ -33,8 +34,17 @@ function ModalForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    console.log("i am clicked!!");
+
+    console.log(e);
+
     emailjs
-      .sendForm("service_453ue7f", formRef.current)
+      .sendForm(
+        "service_453ue7f",
+        "template_q9e98yl",
+        formRef.current,
+        "tGy6qzgS-hxxlQet-"
+      )
       .then((response) => {
         console.log("Email sent successfully!", response);
         handleClose();
@@ -43,6 +53,7 @@ function ModalForm() {
         console.log("Email failed to send...", err);
       });
   };
+
   //function will be responsible for submitting information and closing modal
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -156,12 +167,7 @@ function ModalForm() {
                 placeholder="Estimated Attendance"
               />
             </Form.Group>
-            <Button
-              type="submit"
-              variant="dark"
-              className="animatedBorder"
-              onClick={handleClose}
-            >
+            <Button type="submit" variant="dark" onClick={handleSubmit}>
               SUBMIT
             </Button>
           </Form>
