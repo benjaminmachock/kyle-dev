@@ -58,13 +58,12 @@ const ModalForm1 = () => {
   return (
     <>
       <Button
-        variant="dark"
+        variant="danger"
         onClick={handleShow}
         size="lg"
         style={{
           fontSize: 40,
           color: "#fff",
-          backgroundColor: "#000",
           border: "none",
         }}
       >
@@ -208,12 +207,14 @@ const ModalForm1 = () => {
                 </Form.Group>
               </Form>
             </Modal.Body>
-
-            <Modal.Footer>
-              <Button onClick={handleSubmit} variant="secondary">
-                Book
-              </Button>
-            </Modal.Footer>
+            <Button
+              size="lg"
+              className="animatedBorder"
+              onClick={handleSubmit}
+              variant="secondary"
+            >
+              Book
+            </Button>
           </Modal.Dialog>
         </Modal>
       </div>

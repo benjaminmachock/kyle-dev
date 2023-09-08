@@ -53,7 +53,7 @@ function ModalForm() {
   return (
     <>
       <Button
-        variant="dark"
+        variant="danger"
         onClick={handleShow}
         size="lg"
         style={{
