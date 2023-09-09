@@ -9,9 +9,15 @@ import { TbBaselineDensityMedium, TbX } from "react-icons/tb";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("home");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleNavLinkClick = (link) => {
+    setActiveLink(link);
+    setIsMenuOpen(false);
   };
 
   useEffect(() => {
@@ -60,7 +66,12 @@ function Header() {
             style={{ color: "white", paddingLeft: "1rem" }}
             to="/land"
           >
-            <NavLink>About</NavLink>
+            <NavLink
+              onClick={() => handleNavLinkClick("about")}
+              className={activeLink === "about" ? "active" : ""}
+            >
+              About
+            </NavLink>
           </LinkContainer>
         </Navbar.Collapse>
       </Container>
