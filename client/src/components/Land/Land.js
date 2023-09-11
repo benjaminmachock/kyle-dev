@@ -74,11 +74,12 @@ function Land() {
           style={{
             fontSize: "1.25rem",
             textAlign: "center",
-            backgroundColor: "#e0e0e0",
+            backgroundColor: "#545454",
             border: "2px solid black",
             borderRadius: "1rem",
             marginTop: "1rem",
             padding: "1rem",
+            color: "white",
           }}
         >
           American country singer/songwriter Kyle Jennings’ has built his brand
