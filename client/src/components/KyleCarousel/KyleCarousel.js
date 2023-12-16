@@ -18,18 +18,7 @@ function KyleCarousel() {
               <Carousel.Item interval={3000}>
                 <img className="d-block w-100" src={image1} alt="First slide" />
               </Carousel.Item>
-              <Carousel.Item interval={3000}>
-                <a
-                  href="https://www.ticketmaster.com/event/08005EF8E7E0386E?fbclid=IwAR0D3NnRy73sVkRbNLYPBMB1UO9zVGwcYzAa8dGUTfk9vYqiJujrs1uuEbY"
-                  target="no_blank"
-                >
-                  <img
-                    className="d-block w-100"
-                    src={image5}
-                    alt="Second slide"
-                  />
-                </a>
-              </Carousel.Item>
+
               <Carousel.Item interval={3000}>
                 <img className="d-block w-100" src={image2} alt="Third slide" />
               </Carousel.Item>
