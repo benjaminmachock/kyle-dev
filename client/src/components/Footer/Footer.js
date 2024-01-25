@@ -2,6 +2,8 @@ import Image from "react-bootstrap/Image";
 import Logo from "../../images/kylejennings logo.png";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <>
       <footer
@@ -14,7 +16,7 @@ const Footer = () => {
         }}
       >
         <p>
-          &copy; <h3 style={{ display: "inline" }}>2023</h3>
+          &copy; <h3 style={{ display: "inline" }}>{currentYear}</h3>
           <br />
           <Image
             src={Logo}
