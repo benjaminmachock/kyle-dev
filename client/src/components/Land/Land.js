@@ -1,5 +1,5 @@
-import React from "react";
 import Kyle5 from "../../images/kyle5_compressed_resized.webp";
+import tipBucket from "../../images/tipBucket.webp";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { FaPaypal, FaSpotify, FaAmazon } from "react-icons/fa";
 import { BiLogoVenmo } from "react-icons/bi";
@@ -39,7 +39,7 @@ function Land() {
       <Container fluid>
         <Row>
           <Col md="12" lg="6">
-            <div className="my-3 py-3 ">
+            <div className="my-3 py-3">
               <Image
                 src={Kyle5}
                 fluid
@@ -108,10 +108,34 @@ function Land() {
             backgroundColor: "rgba(255, 255, 255, 0.2)",
             padding: "20px",
             borderRadius: "10px",
+            position: "relative",
+            overflow: "hidden"
           }}
         >
-          <Col md={12} className="mb-4">
-            <h1 className="text-center m-5">Virtual Tip Jar</h1>
+          <Col md={12} className="mb-4" style={{ position: "relative" }}>
+            <h1
+              className="text-center m-5"
+              style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }}
+            >
+              Virtual Tip Jar
+            </h1>
+            <div
+              style={{
+                backgroundImage: `url(${tipBucket})`,
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                position: "absolute",
+                top: "40%",
+                left: "50%",
+                width: "11em",
+                height: "11em",
+                transform: "translate(-50%, -50%)",
+                zIndex: -1,
+                opacity: 0.8,
+                pointerEvents: "none"
+              }}
+            />
             <div className="text-center">
               <a
                 href="https://www.paypal.com/paypalme/kylejenningsmusic"
@@ -123,6 +147,7 @@ function Land() {
                   size={50}
                   style={{
                     color: "#3b7bbf",
+                    textShadow: "2px 2px 5px rgba(0, 0, 0, 0.5)",
                   }}
                 />
               </a>
@@ -136,6 +161,7 @@ function Land() {
                   size={50}
                   style={{
                     color: "#82bce8",
+                    textShadow: "2px 2px 5px rgba(0, 0, 0, 0.5)",
                   }}
                 />
               </a>
@@ -159,6 +185,7 @@ function Land() {
                   size={50}
                   style={{
                     color: "#1db954",
+                    textShadow: "2px 2px 5px rgba(0, 0, 0, 0.5)",
                   }}
                 />
               </a>
@@ -172,6 +199,7 @@ function Land() {
                   size={50}
                   style={{
                     color: "#FF9900",
+                    textShadow: "2px 2px 5px rgba(0, 0, 0, 0.5)",
                   }}
                 />
               </a>
@@ -185,6 +213,7 @@ function Land() {
                   size={50}
                   style={{
                     color: "#fa57c1",
+                    textShadow: "2px 2px 5px rgba(0, 0, 0, 0.5)",
                   }}
                 />
               </a>
@@ -247,7 +276,6 @@ function Land() {
               url="https://youtube.com/kylejenningsmusiconline"
               network="youtube"
               fgColor="white"
-              target="_blank"
             />
           </Col>
         </Row>
