@@ -3,6 +3,7 @@ import NavLink from "react-bootstrap/esm/NavLink";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
+import crowdImage from "../../images/crowdImage.jpg";
 import emailjs from "emailjs-com";
 
 const ModalForm1 = () => {
@@ -57,7 +58,16 @@ const ModalForm1 = () => {
         Book Event
       </NavLink>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal 
+      show={show} 
+      onHide={handleClose}
+      dialogClassName="modal-90w"
+      style={{
+        backgroundImage: `url(${crowdImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      >
         <Modal.Header closeButton>
           <Modal.Title>Ready to Rock? Let's Book It!</Modal.Title>
         </Modal.Header>
