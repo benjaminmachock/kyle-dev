@@ -3,7 +3,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import KyleCarousel from "../components/KyleCarousel/KyleCarousel";
 import { SocialIcon } from "react-social-icons";
-import ModalForm from "../components/ModalForm/ModalForm";
 
 const Home = () => {
   return (
@@ -11,9 +10,6 @@ const Home = () => {
       <KyleCarousel />
       <main>
         <div className="position-relative overflow-hidden p-1 p-md-3 m-md-1 text-center">
-          <div className="col-md-6 p-lg-5 mx-auto">
-            <ModalForm />
-          </div>
         </div>
         <hr className="my-5" style={{ color: "#e3e3e3" }} />
         <h3 style={{ color: "white", textAlign: "center" }}>SOCIAL</h3>
