@@ -16,7 +16,7 @@ const Footer = () => {
         }}
       >
         <p>
-          &copy; <h3 style={{ display: "inline" }}>{currentYear} Kyle Jennings. All Rights Reserved.</h3>
+          &copy; <h3 style={{ display: "inline" }}>{currentYear}. All Rights Reserved.</h3>
           <br />
           <Image
             src={Logo}
