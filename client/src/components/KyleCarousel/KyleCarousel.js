@@ -7,6 +7,7 @@ import image2a from "../../images/kyle_concert_2.webp";
 import image2 from "../../images/carousel2_resized_compressed.webp";
 import image3 from "../../images/carousel3_compressed_resized.webp";
 import image6 from "../../images/kyle3_concert.webp";
+import image7 from "../../images/kyle_new.png";
 
 function KyleCarousel() {
   return (
@@ -17,6 +18,9 @@ function KyleCarousel() {
             <Carousel fade id="custom-carousel">
               <Carousel.Item interval={3000}>
                 <img className="d-block w-100" src={image1} alt="First slide" />
+              </Carousel.Item>
+              <Carousel.Item interval={3000}>
+                <img className="d-block w-100" src={image7} alt="Third slide" />
               </Carousel.Item>
               <Carousel.Item interval={3000}>
                 <img
