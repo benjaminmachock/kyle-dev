@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
 import Logo from "../../images/kylejennings logo.png";
 import { TbBaselineDensityMedium, TbX } from "react-icons/tb";
-import ModalForm1 from '../ModalForm/ModalForm';
+import ModalForm1 from "../ModalForm/ModalForm";
 import UpcomingShowsModal from "../UpcomingShowsModal/UpcomingShowsModal";
 
 function Header() {
@@ -58,7 +58,7 @@ function Header() {
             onClick={toggleMenu}
           >
             {isMenuOpen ? (
-              <TbX color="white" size={50} />
+              <TbX color="white" size={30} />
             ) : (
               <TbBaselineDensityMedium color="white" size={50} />
             )}
