@@ -55,18 +55,18 @@ const ModalForm1 = () => {
         style={{ color: "white", paddingLeft: "2rem", cursor: "pointer" }}
         onClick={handleShow}
       >
-        Book Event
+        Book
       </NavLink>
 
-      <Modal 
-      show={show} 
-      onHide={handleClose}
-      dialogClassName="modal-90w"
-      style={{
-        backgroundImage: `url(${crowdImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      <Modal
+        show={show}
+        onHide={handleClose}
+        dialogClassName="modal-90w"
+        style={{
+          backgroundImage: `url(${crowdImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
         <Modal.Header closeButton>
           <Modal.Title>Ready to Rock? Let's Book It!</Modal.Title>
@@ -82,7 +82,10 @@ const ModalForm1 = () => {
                 onChange={handleInputChange}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicPhone.ControlPhone1">
+            <Form.Group
+              className="mb-3"
+              controlId="formBasicPhone.ControlPhone1"
+            >
               <Form.Control
                 type="text"
                 placeholder="Phone"
@@ -91,7 +94,10 @@ const ModalForm1 = () => {
                 onChange={handleInputChange}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail.ControlEmail1">
+            <Form.Group
+              className="mb-3"
+              controlId="formBasicEmail.ControlEmail1"
+            >
               <Form.Control
                 type="text"
                 placeholder="Email"
@@ -101,15 +107,22 @@ const ModalForm1 = () => {
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicDate.ControlDate1">
-              <Form.Label style={{ fontSize: "15px" }}>Please Select a Date</Form.Label>
+              <Form.Label style={{ fontSize: "15px" }}>
+                Please Select a Date
+              </Form.Label>
               <Form.Control
                 type="date"
                 name="requestedDate"
                 onChange={handleInputChange}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicTime.ControlTimearea1">
-              <Form.Label style={{ fontSize: "15px" }}>Please Select a Time</Form.Label>
+            <Form.Group
+              className="mb-3"
+              controlId="formBasicTime.ControlTimearea1"
+            >
+              <Form.Label style={{ fontSize: "15px" }}>
+                Please Select a Time
+              </Form.Label>
               <Form.Control
                 type="time"
                 placeholder="Time"
@@ -118,7 +131,10 @@ const ModalForm1 = () => {
                 onChange={handleInputChange}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicVenueName.ControlVenueName1">
+            <Form.Group
+              className="mb-3"
+              controlId="formBasicVenueName.ControlVenueName1"
+            >
               <Form.Control
                 type="text"
                 placeholder="Venue Name"
@@ -127,7 +143,10 @@ const ModalForm1 = () => {
                 onChange={handleInputChange}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicVenueAddress.ControlVenueAddress1">
+            <Form.Group
+              className="mb-3"
+              controlId="formBasicVenueAddress.ControlVenueAddress1"
+            >
               <Form.Control
                 as="textarea"
                 placeholder="Venue Address"
@@ -151,7 +170,10 @@ const ModalForm1 = () => {
                 <option value="corporate">Corporate Event</option>
               </Form.Control>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEventName.ControlEventName1">
+            <Form.Group
+              className="mb-3"
+              controlId="formBasicEventName.ControlEventName1"
+            >
               <Form.Control
                 type="text"
                 placeholder="Event Name (Optional)"
@@ -160,7 +182,10 @@ const ModalForm1 = () => {
                 onChange={handleInputChange}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicVenueAttendance.ControlEventName1">
+            <Form.Group
+              className="mb-3"
+              controlId="formBasicVenueAttendance.ControlEventName1"
+            >
               <Form.Control
                 type="number"
                 placeholder="Estimated Attendance"
